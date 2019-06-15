@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
-<ArrayOfMiscTranslationEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<ArrayOfMiscTranslationEntry xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-btnResetOdbcHacks">This button will delete all ODBC hacks and replace them with a set of known hacks for various datasources, such as MSSQL, MS Access, Postgres...</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-gbOdbcHacks">This section contains rules to modify all commands sent to the datasource if the connection string matches the rule.  You may use the Reset button to pre-populate known rules for reference.</MiscTranslationEntry>
   <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-btnExportUIBrowser">Press this button to start a wizard allowing you to set the EQ2's web browser to ACT's encounter index and optionally extracting a browser UI replacement with a collapsable interface and controls for maximum screen space.</MiscTranslationEntry>
   <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-btnOdbcDropTables">This will perform the DROP command on each table ACT uses.  This will delete all table data and remove the tables from the datasource.</MiscTranslationEntry>
   <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-btnOdbcTestConnection">This will attempt to log into the ODBC datasource specified in the Connection String.</MiscTranslationEntry>
