@@ -1,5 +1,7 @@
 <?xml version="1.0"?>
 <ArrayOfMiscTranslationEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-btnResetOdbcHacks">此按钮将删除所有ODBC Hack并用一组已知的Hack替换它们用于各种数据源，例如MSSQL，MS Access，Postgres ......</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-gbOdbcHacks">本节包含在连接字符串与规则匹配时修改发送到数据源的所有命令的规则。 您可以使用“重置”按钮预先填充已知规则以供参考。</MiscTranslationEntry>
   <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-btnExportUIBrowser">按此按钮启动向导，允许您将EQ2的Web浏览器设置为ACT的战斗索引，并可选择使用可折叠界面和控件提取浏览器UI替换，以获得最大屏幕空间。</MiscTranslationEntry>
   <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-btnOdbcDropTables">这将在ACT使用的每个表上执行DROP命令。 这将删除所有表数据并从数据源中删除表。</MiscTranslationEntry>
   <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-btnOdbcTestConnection">这将尝试登录到连接字符串中指定的ODBC数据源。</MiscTranslationEntry>

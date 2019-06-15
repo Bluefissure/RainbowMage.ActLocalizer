@@ -7,6 +7,7 @@
     <Control ControlPath="root\groupBox" UniqueName="nudTLSampleSize" Text="10" />
     <Control ControlPath="root\groupBox" UniqueName="label2" Text="样本细节（秒）" />
     <Control ControlPath="root\groupBox" UniqueName="cbGlobalMaxLimit" Text="相同类型的行共享相同的比例" />
+    <Control ControlPath="root\groupBox" UniqueName="cbTLIncomingHealing" Text="承疗量" />
     <Control ControlPath="root\groupBox" UniqueName="cbTLOutgoingHealing" Text="治疗量" />
     <Control ControlPath="root\groupBox" UniqueName="cbTLIncomingDamage" Text="承伤量" />
     <Control ControlPath="root\groupBox" UniqueName="cbTLOutDamage" Text="伤害量" />
