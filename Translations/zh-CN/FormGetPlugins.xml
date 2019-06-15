@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ControlText Form="FormGetPlugins">
+    <Control ControlPath="root" UniqueName="btnUsePlugin" Text="添加并启用" />
+    <Control ControlPath="root" UniqueName="groupBox2" Text="插件信息" />
+    <Control ControlPath="root" UniqueName="groupBox1" Text="插件标题" />
+</ControlText>

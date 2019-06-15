@@ -1,16 +1,16 @@
 @echo off
 
 if not exist ".\Thirdparty\Advanced Combat Tracker.exe" (
-	echo [エラー]
-	echo  ビルドを実行するためには、"Thirdparty"ディレクトリに"Advanced Combat Tracker.exe"をコピーする必要があります。
+	echo [Error]
+	echo  In order to execute the build, you need to copy "Advanced Combat Tracker.exe" to the "Thirdparty" directory.
 	goto END
 )
 
 set DOTNET_PATH=%windir%\Microsoft.NET\Framework\v4.0.30319
 if not exist %DOTNET_PATH% (
-	echo [エラー]
-	echo  .NET Frameworkのディレクトリ（%DOTNET_PATH%）が見つかりません。
-	echo  ビルドを実行するためには.NET Framework 4.5.1がインストールされている必要があります。
+	echo [Error]
+	echo  The .NET Framework directory ^(%DOTNET_PATH%^) can not be found.
+	echo  In order to execute build, .NET Framework 4.5.1 ^(or higher?^) must be installed.
 	goto END
 )
 

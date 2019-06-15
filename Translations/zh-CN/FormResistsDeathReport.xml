@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ControlText Form="FormResistsDeathReport">
+    <Control ControlPath="root" UniqueName="lblDeathSelect" Text="选择死亡：" />
+    <Control ControlPath="root" UniqueName="btnHide" Text="关闭" />
+    <Control ControlPath="root" UniqueName="btnCopySelected" Text="复制所选" />
+    <Control ControlPath="root" UniqueName="btnCopyAll" Text="复制所有" />
+</ControlText>

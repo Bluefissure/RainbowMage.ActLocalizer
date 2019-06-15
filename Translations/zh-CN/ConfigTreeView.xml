@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<ArrayOfTreeViewTranslationEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TreeViewTranslationEntry Original="Miscellaneous">通用设置</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Sound Settings">声音选项</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Configuration Import/Export">配置导入/导出</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="XML Share Snippets">XML 分享</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="XML Config Subscriptions">XML 订阅</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="LCD Display Options">LCD 显示设置</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Monochrome LCD Options">单色 LCD 设置</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Color LCD Options">彩色 LCD 设置</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Main Table/Encounters">首页/战斗</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="General">通用设置</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Encounter Culling">战斗记录隐藏</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Zone View Options">区域数据视图</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Encounter View Options">战斗数据视图</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Combatant View Options">成员数据视图</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="DamageType View Options">分类数据视图</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="AttackType View Options">技能数据视图</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Output Display">数据输出</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Graphing">图形表</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Mini Parse Window">迷你统计</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Text Export Settings">文本输出</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="ODBC (SQL)">ODBC (SQL)</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="ACT Web Server">ACT Web 服务器</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="HTML File Generation">HTML 文件生成</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Color and Font Settings">颜色与字体设置</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Main User Interface">首页</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Selective Parsing">选择性分析</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Data Correction">数据校正</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Combatant Rename">战斗重命名</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Ability Redirect">技能重定向</TreeViewTranslationEntry>
+</ArrayOfTreeViewTranslationEntry>

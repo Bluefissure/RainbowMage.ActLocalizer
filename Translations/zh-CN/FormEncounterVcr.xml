@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ControlText Form="FormEncounterVcr">
+    <Control ControlPath="root\panel2" UniqueName="rbPause" Text="||" />
+    <Control ControlPath="root\panel2" UniqueName="lblStatus" Text="暂停" />
+    <Control ControlPath="root\panel2" UniqueName="rbRewind" Text="&lt;&lt;" />
+    <Control ControlPath="root\panel2" UniqueName="btnBegining" Text="|&lt;" />
+    <Control ControlPath="root\panel2" UniqueName="rbFastForward" Text="&gt;&gt;" />
+    <Control ControlPath="root\panel2" UniqueName="btnFrameBack" Text="&lt; ||" />
+    <Control ControlPath="root\panel2" UniqueName="rbPlay" Text="&gt;" />
+    <Control ControlPath="root\panel2" UniqueName="btnFrameForward" Text="|| &gt;" />
+    <Control ControlPath="root\panel2" UniqueName="btnEnding" Text="&gt;|" />
+    <Control ControlPath="root\panel1" UniqueName="cbLinkToEnc" Text="实时模式" />
+    <Control ControlPath="root\panel1" UniqueName="cbRadialDisplay" Text="环装显示战斗" />
+    <Control ControlPath="root\panel1" UniqueName="cbOutlineTraces" Text="显示跟踪指针" />
+    <Control ControlPath="root\panel1" UniqueName="label3" Text="伤害阈值" />
+    <Control ControlPath="root\panel1" UniqueName="nudHistoryShadowSecs" Text="1" />
+    <Control ControlPath="root\panel1" UniqueName="label2" Text="s" />
+    <Control ControlPath="root\panel1" UniqueName="label1" Text="阴影" />
+    <Control ControlPath="root\panel1" UniqueName="nudMaxOpacityThreshold" Text="5000" />
+    <Control ControlPath="root\panel1" UniqueName="cbPersistantMobs" Text="Inactive mobs persist" />
+</ControlText>

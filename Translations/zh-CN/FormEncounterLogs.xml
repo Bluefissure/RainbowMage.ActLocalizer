@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ControlText Form="FormEncounterLogs">
+    <Control ControlPath="root" UniqueName="cbOnlyResults" Text="只显示&#xD;&#xA;搜索结果" />
+    <Control ControlPath="root" UniqueName="groupBox1" Text="在战斗日志中寻找..." />
+    <Control ControlPath="root\groupBox1" UniqueName="btnSearchText" Text="以文本方式查询" />
+    <Control ControlPath="root\groupBox1" UniqueName="btnSearchRegex" Text="以正则表达式方式查询" />
+    <Control ControlPath="root\groupBox1" UniqueName="btnFindNext" Text="下一个" />
+    <Control ControlPath="root\groupBox1" UniqueName="btnFindPrev" Text="前一个" />
+    <Control ControlPath="root\groupBox2" UniqueName="btnCopyCombat" Text="复制战斗" />
+    <Control ControlPath="root\groupBox2" UniqueName="btnCopyResults" Text="复制结果" />
+    <Control ControlPath="root\groupBox2" UniqueName="btnCopySelection" Text="复制所选" />
+    <Control ControlPath="root\groupBox2" UniqueName="btnCopyAll" Text="复制所有" />
+</ControlText>

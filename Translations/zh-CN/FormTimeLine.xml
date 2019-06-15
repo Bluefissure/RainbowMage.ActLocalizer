@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ControlText Form="FormTimeLine">
+    <Control ControlPath="root" UniqueName="groupBox" Text="事件切换" />
+    <Control ControlPath="root\groupBox" UniqueName="btnInvertChecked" Text="反选" />
+    <Control ControlPath="root\groupBox" UniqueName="btnCheckAll" Text="全选" />
+    <Control ControlPath="root\groupBox" UniqueName="btnApplyRecalc" Text="应用以上设置并重新计算" />
+    <Control ControlPath="root\groupBox" UniqueName="nudTLSampleSize" Text="10" />
+    <Control ControlPath="root\groupBox" UniqueName="label2" Text="样本细节（秒）" />
+    <Control ControlPath="root\groupBox" UniqueName="cbGlobalMaxLimit" Text="相同类型的行共享相同的比例" />
+    <Control ControlPath="root\groupBox" UniqueName="cbTLOutgoingHealing" Text="治疗量" />
+    <Control ControlPath="root\groupBox" UniqueName="cbTLIncomingDamage" Text="承伤量" />
+    <Control ControlPath="root\groupBox" UniqueName="cbTLOutDamage" Text="伤害量" />
+    <Control ControlPath="root\groupBox" UniqueName="cbTLRollingAvg" Text="使用滚动平均图（而非数据段）" />
+    <Control ControlPath="root\groupBox" UniqueName="label1" Text="战斗分组" />
+    <Control ControlPath="root" UniqueName="cbAllowRedraw" Text="R" />
+    <Control ControlPath="root" UniqueName="btnZoomIn" Text="+" />
+    <Control ControlPath="root" UniqueName="btnZoomOut" Text="-" />
+</ControlText>

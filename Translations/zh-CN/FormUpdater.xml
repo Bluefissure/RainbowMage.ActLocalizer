@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ControlText Form="FormUpdater">
+    <Control ControlPath="root" UniqueName="btnCancel" Text="取消" />
+    <Control ControlPath="root" UniqueName="lblThisVer" Text="1.0.0.0" />
+    <Control ControlPath="root" UniqueName="label1" Text="此版本：" />
+    <Control ControlPath="root" UniqueName="label2" Text="当前版本：" />
+    <Control ControlPath="root" UniqueName="lblWebVer" Text="1.0.0.0" />
+    <Control ControlPath="root" UniqueName="btnUpdate" Text="更新" />
+    <Control ControlPath="root" UniqueName="btnDownload" Text="下载" />
+</ControlText>

@@ -1,0 +1,387 @@
+<?xml version="1.0"?>
+<ArrayOfMiscTranslationEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-btnExportUIBrowser">按此按钮启动向导，允许您将EQ2的Web浏览器设置为ACT的战斗索引，并可选择使用可折叠界面和控件提取浏览器UI替换，以获得最大屏幕空间。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-btnOdbcDropTables">这将在ACT使用的每个表上执行DROP命令。 这将删除所有表数据并从数据源中删除表。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-btnOdbcTestConnection">这将尝试登录到连接字符串中指定的ODBC数据源。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-btnOdbcValidateTables">这将确保ODBC数据源具有所需的表，并且表具有所需的列。 如果缺少任何内容，ACT将尝试创建或更改表。 SQL导出需要成功。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbBlockisHit">如果选中，则报告未能造成任何伤害的命中仍将被视为命中。 否则只有造成伤害的攻击才会被视为成功。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbCurrentOdbc">在战斗中，ACT可以每隔几秒导出到ODBC数据源上名为current_table的临时表。 每次导出时，表格都将被删除并重新填充以反映当前的战斗。 仅当您与数据源的连接速度非常快时，才建议使用此选项。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbDoubleBufferLV">选中后，ACT将尝试启用主表的最小重绘。 WindowsXP之前的Windows版本通常没有此功能，可能会导致意外结果。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbExGraph">选中后，HTML导出将包含主要战斗图表。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbExHTML">EQ2附带基于FireFox的集成Web浏览器。 这可用于查看全屏时ACT导出的数据。 主要战斗图表将导出为HTML，以便在EQ2 HTML窗口中查看。 要访问HTML窗口，请输入：“/browser”</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbExHTMLFTP">如果选中，当ACT导出兼容EQ2的HTML文件时，它将尝试将它们上传到您选择的FTP服务器。 确保在使用前测试您的设置。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbExOdbc">在遇到结束时自动通过ODBC导出SQL。
+
+要使用此功能，您需要一个ODBC驱动程序来连接到您的数据源并填写远程主机信息。 http://connectionstrings.com/可以帮助您为特定的SQL数据源创建连接信息。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbExportBeep">选中后，任何导出到剪贴板的行都会导致系统发出默认蜂鸣声。 这是一个很好的指示，表明何时结束并且有新数据要粘贴到EQ2中。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbExportFilterSpace">选中后，Mini Parse窗口和剪贴板导出将排除名称中包含空格的所有成员。 这将排除大多数怪物，如“a giant bat”或“King Drayek”，但不包括“Anguis”或“Frostbite”。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbExText">战斗结束后，成员摘要将被导出到剪贴板。 这些摘要可以通过按Ctrl-V粘贴到EQ2中，并在“常规选项”下自定义 -&gt; 纯文字格式 -&gt; 剪贴板导出格式。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbGermanMergeNames">如果启用，具有语法变化的成员如：ruhiger Wachposten, ruhigen Wachpostens s, ruhigen Wachposten, ruhige Wachposten, ruhigen Wachposten en; 会被全部显示为同一个成员。 （在战斗中首次出现）</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbGExpEnd">如果出现'You gain bonus experience for defeating the encounter!'，战斗将被视为已结束。
+（'You convert experience into achievement experience!'一秒钟两次也将触发这一点。）</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbGraphSoloInc">未选中时，单人图表仅显示DPS线路的传出伤害。 选中后，还会生成传入的伤害和传入的治疗DPS线。 （这会略微增加用于生成的CPU时间）</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbHtmlTimers">选中后，ACT将导出显示定时器窗口当前视图的HTML页面。 计时器视图将与原始窗口具有相同的尺寸，因此请根据需要调整其大小。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbIdleEnd">如果在N秒内未观察到诸如攻击之类的战斗动作，则将认为战斗结束。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbIdleTimerEnd">以前默认的非选项，ACT可以在内部计算不活动秒数，而不是在最后一次战斗动作之后等待足够时间获取日志时间戳。 如果禁用，ACT将仅基于时间戳结束战斗，并且如果没有解析新的日志行，则可能永远不会结束，直到从游戏看到新的日志时间戳。 启用后，计时器不会立即结束基于计时器的战斗，而是在两秒后（如果没有日志时间戳的话）。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbKillEnd">当一名团队成员杀死另一名成员时，该战斗将被视为已结束。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbLcdRoute">连接ACT剪贴板共享器时，使用此选项可将所有LCD流量路由到连接的计算机键盘上的G15 LCD。 这允许您在与游戏不同的计算机上运行ACT并保留所有LCD功能。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbLongEncDuration">以前只使用定时战斗结束时，在战斗结束后进行治疗会影响战斗的总持续时间，因此会影响ExtDPS。 如果不选中，在最后一次战斗动作之后的治疗仍将被记录，直到战斗结束，但不会影响战斗的持续时间。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbMiniClickThrough">启用后，鼠标操作不会影响迷你窗口。 设置透明度后，您可以透视并单击窗口后面的内容。 当然，在禁用点击之前，您无法再以正常方式移动或关闭窗口。 注意：您可以通过右键单击主窗口“迷你窗口”按钮来切换此选项。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbMultiDamageIsOne">启用后，具有多种伤害类型的攻击，例如“300次压碎，5次毒和5次病弱”将显示为一次总攻击：300/5/5压碎/毒/病弱，内部被视为310次。如果禁用 ，每种伤害类型都会显示为单独技能。例如分成三次攻击：300次击打; 5毒; 5病弱。 在计算ToHit％时，单次攻击显示为多次将产生影响。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbOnlyGraphAllies">选中后，简单的战斗柱状图只会显示您的队友。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbPetIsMaster">如果选中，宠物将不会显示为自己的条目，而是作为其主人的技能。 如果不加以控制，宠物将被视为单独的成员，并拥有与其主人无关的统计数据。
+此设置不可逆转，如果已经发生战斗，则不会将宠物与其主人合并或分开。 只有未来的战斗才会受到此设置的影响。
+
+
+由于LU19和&lt;目标标签&gt; 在宠物的名字下而不是在日志文件中显示，解析器无法自动查看宠物的主人。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbRecalcWardedHits">如果启用，在吸收后立即无伤害命中或减少伤害命中将增加吸收量。 石肤的无伤害命中无法重新计算。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbRecordLogs">选中后，ACT将记录战斗期间出现的所有日志行。 然后，您可以右键单击战斗，选择查看日志并查看/搜索它们。 与默认设置相比，禁用此选项可将内存使用率降低45％以下。 导出的ACT文件将保留这些记录的日志。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbRestrictToAll">选中后，在每个成员下，数据的唯一伤害类型条目将是标记为(Ref)的参考。 相比于'Melee（Out）'所显示的All、打击和斩击，它将只显示All，这是一个打击/斩击的组合。 由于(Ref)标签，仍然会在'All Outgoing（Ref）'下找到打击/斩击。列表显示会更加拥挤。
+与默认设置相比，启用此选项将使CPU使用率降低一点，小于10％，并将内存使用量减少10％以上。 未启用，此选项将填充其列表中的所有条目。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbSExpEnd">如果日志中出现了'You gain experience!'，战斗将被视为已结束。
+('You convert experience into achievement experience!'也会触发这个。)</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbSqlSafeMode">在安全模式下，将一次发送一个SQL命令并检查服务器响应。 否则，命令将以100行批次发送，虽然更快，但调试会更成问题。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbSwarmIsMaster">启用后，“Духогня（персонажа）”，“WässrigeHoraldes Character”和其他类似命名的宠物将攻击伤害添加到他们主人的命名条目中。 受到的的攻击将*不会*被重定向到其主人。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbWebServerEnabled">ACT Web界面在外观上与EQ2 HTML导出有些相似。 不同的是，Web界面不是由中间HTML文件组成，而是根据请求生成HTML。 默认情况下，您可以看到当前战斗图表的自动更新页面，迷你窗口文本（支持多个预设），拼写计时器以及可以浏览内存中所有ACT遇到数据的页面。 基于该数据的上下文菜单报告当前不可用，但可以使用插件来扩展Web界面。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbWebServerShowReq">如果启用，将显示所有HTTP请求。 否则，将隐藏诸如自动更新页面部分或.css/.js文件之类的内容（除非非常大）。 对'/timers'（始终显示）的一个请求也可以发起对'/ACT.js'，'/ACT.css'和'/timers.body'（可选地显示）的请求。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbZoneAllListing">作为每个区域的第一次战斗，“All”条目将组合来自该区域的其他战斗的所有数据。 当在该区域内战斗更新时，All条目将实时更新。 全部战斗条目将与该区域内所有战斗的合并战斗相同。
+
+与默认选项相比，禁用此选项可将内存和CPU使用率降低10％以上。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-CurrentExports">选中此选项将创建一个带有自动更新图或表的自定义HTML页面。 该页面将以用户指定的间隔自动刷新，提供或多或少的实时战斗视图。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-ddlGraphPriority">此设置将更改图表生成的优先级。 所有程序都具有优先级，默认情况下通常为Normal，并且此优先级定义应为当前任务提供多少CPU时间。 如果设置为最低（空闲），则图生成将仅占用其他应用程序未使用的CPU时间。 如果游戏正在运行，这将几乎为零。 正常优先级将为ACT和任何其他任务（例如EQ2）提供相等的CPU时间。 高于正常（不推荐）将使图表生成比大多数其他程序更优先，并且可能导致游戏瞬间卡死或明显卡顿。 在图形生成期间，ACT的UI也可能无响应。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-ddlLanguage">这会将解析引擎更改为另一种语言或仅限计时器模式。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-ExFTPPASV">如果您位于路由器后面或有多个NIC，则可能需要使用被动模式传输。 如果目标FTP服务器处于相同条件（仅PASV状态），则必须使用活动模式。 需要PASV模式的两台计算机无法建立FTP传输。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-GraphSize">这将在HTML导出和EQ2视图中设置图形的图像尺寸。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-GraphType">选择主要战斗显示的图形方法。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-lblWebServerPort">侦听端口接受来自的HTTP请求。 如果使用非标准端口（80），则客户端必须将该端口添加到其URL中，例如：http://127.0.0.1:80/</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-LogPriority">此设置将更改正常日志解析的优先级。 所有程序都具有优先级，默认情况下通常为Normal，并且此优先级定义应为当前任务提供多少CPU时间。 如果设置为Lowest（Idle），则日志解析将仅占用其他应用程序未使用的CPU时间。 如果游戏正在运行，这将几乎为零。 正常优先级将为ACT和任何其他任务（例如EQ2）提供相等的CPU时间。
+
+如果在EQ2运行时ACT似乎无法跟上日志解析任务，您可能希望将其设置为高于正常。
+
+要使此设置生效，必须重新启动ACT或重新打开当前日志。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-SampleType">这些设置会影响沿X轴的DPS图。 如果遇到一分钟长，并且选择固定数量的DPS样本（6），则将以10秒的间隔存在六个X轴图。 如果选择每15秒的DPS样本，则将以15秒的间隔存在四个DPS图。 固定数字对于保持图表可读是有用的，无论遇到多长时间，并且固定的样本持续时间对于与其他时间线的比较是有用的。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-tbCharName">如果日志文件打开，则忽略此设置; 但是，如果ACT仅用作离线解析器，则此设置将用于填写您的名称，而不是使用'YOU'。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-TextFormatAddPreset">将这些格式选项保存到下拉列表中。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-TextFormatAllies">团队成员格式化字符串。 （第一行格式）</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-TextFormatAlliesOnly">如果选中，只有在战斗中证明自己是团队的成员才会被包括在导出数据中。 这包括治疗你或其他已证实的成员，或攻击你的敌人。 如果你在战斗期间没有加入任何团队，所有战斗人员都将被导出。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-TextFormatAlliesStats">选中后，团队成员的总数将会作为正常导出的前缀。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-TextFormatPlayers">每个玩家的格式化字符串。 （重复格式）</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-TextFormatPreset">用保存的预设替换当前格式化程序。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-TextFormatRemovePreset">从下拉列表中删除当前选定的格式。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-TextFormatSort">此格式化选项将使用的排序方法。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbCullAll">创建新区域列表时，ACT将保持列出的'All'区域范围内遇到的数量并剔除旧的。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbCullCount">当一次战斗结束时，正常战斗将被剔除到列出的号码。 这适用于任何当前或以前区域中的战斗，但不会影响'All'区域范围的战斗。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbCullCountIgnoreNoAlly">没有团队成员的战斗，标记为"Encounter"的战斗在确定要剔除的旧遭遇次数时不会增加计数。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbCullNoAlly">当一次战斗结束时，将删除所有标记为"Encounter"的战斗（除了最后一次）。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbCullOther">创建新区域列表时，ACT将保持此前许多区域的正常战斗。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbCullTimer">战斗结束时，将删除超过此时间限制的所有战斗（'All'区域范围内的战斗除外）。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="A non-syntax error when reading XML setting files" Key="messageBox-xmlReadError">解析XML设置时出错：行 #{0} ({1})
+{2}
+
+ 尝试默认设置</MiscTranslationEntry>
+  <MiscTranslationEntry Description="The XML file was not parsable" Key="messageBox-xmlSyntaxError">XML设置文件可能已损坏或无法使用。 在兼容的情况下加载默认值。
+{0}</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-xmlPrefError">XML 首选项错误</MiscTranslationEntry>
+  <MiscTranslationEntry Description="ACT unable to find the EQ2 installation" Key="messageBox-selectEq2Path">您当前的EQ2安装无法检测到。 请选择EQ2所在的文件夹。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-selectEq2Path">EQ2 检测失败</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-openLogWizard">
+显示的日志文件是您希望使用ACT打开的日志文件吗?</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-openLogWizard">检测到的日志文件</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-eq2FolderWizard">检测到的EQ2路径是：
+{0}
+
+它是否正确？</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-eq2FolderWizard">检测到EQ2文件夹</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-odbcDropTables">此过程将删除所有与ACT相关的表数据，并从数据库中删除表。
+一旦完成，就无法撤消，并且必须重新创建表，然后ACT才能再次存储数据。
+
+你确定要继续吗？</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-odbcDropTables">ACT ODBC 数据库删除</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-avoidanceCopyDetail">
+
+你想将它复制到Windows剪贴板吗？</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-avoidanceCopyDetail">每次击中平均伤害避免： {0}</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-removePlugin">您确定要删除插件 {0} 吗？</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-removePlugin">删除插件？</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-importParseError">解析时遇到不可恢复的错误：
+{0}
+解析位置：{1}
+
+{2}
+
+忽略此错误并继续？</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-uiExport1">您是否希望将EQ2嵌入式浏览器的主页设置为ACT的战斗索引？</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-uiExport2">您是否希望将EQ2的浏览器窗口替换为具有可折叠界面和URL栏的浏览器窗口？</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-eq2NotFound">在此文件夹中找不到EverQuest2.exe。 如果您使用的是国际版，则可能需要选择'LP_REGION_??_??'文件夹。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-eq2NotFound">无法确认所选文件夹</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-updateAct">这将关闭程序并开始更新。
+你想继续吗？</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-updateAct">更新？</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-feedbackNoEmail">您没有输入您的电子邮件地址。 如果您需要技术支持或帮助，将无法与您联系。
+如果您报告的是一个罕见的错误，如果没有您的更多信息，则可能无法修复。
+
+您确定要将电子邮件留空吗？</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-feedbackWarning">反馈警告</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-feedbackShort">您的反馈似乎很短。 如果您要报告问题，您描述的越多越好。 如果你没有充分描述问题，我必须猜测你的问题是什么......可能根本没有回应。
+
+您是否希望继续发送反馈？</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-pluginImageError">ACT不能将Win32/COM程序集用作本机插件。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-pluginImageError">图像格式不正确</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-ftpConnectionTest">在此测试期间，ACT可能会无响应。 测试执行期间请至少等待30秒，如果出现则允许通过防火墙通知进行访问。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-importHistoryNoLogMatch">无法找到可能具有日期范围的角色的日志文件。 请找到这个文件。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-importDateTimeFail">无法在文件中找到指定的日期范围。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-importFail">解析失败</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-feedbackSuccess">反馈完成。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-feedbackNoComments">你没有输入任何评论。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-feedbackNoAol">我无法向AOL域发送电子邮件，无论出于何种原因，都会阻止我的尝试。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-feedbackFail">反馈未提交</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-openLogWizardNoFolder">此文件夹中不存在日志文件夹。 您必须在EQ2中启用日志记录才能使用ACT。 在EQ2中键入“/log”以确定日志记录状态。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-openLogWizardNoFolder">没有日志文件夹</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-openLogWizardNoLogs">此文件夹或子文件夹中似乎不存在任何日志。 您必须在EQ2中启用日志记录才能使用ACT。 在EQ2中键入“/ log”以确定日志记录状态。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-openLogWizardNoLogs">没有找到日志文件</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-importHistorySuccess">操作完成</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-importHistorySuccess">导入已检查</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-playerRemoveError">请在列表中选择要删除的名称。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-playerRemoveError">没有选择</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-exportNoEncounters">请在树视图中选择一个战斗记录。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-exportNoEncounters">没什么可导出的</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-exportNoOptions">请选择要在导出中显示的内容。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-sortingColumnError">选择要排序的列条目。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-sortingColumnError">没有选择</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-localSecurityPolicy">由于本地计算机的安全设置，不允许应用程序执行操作。
+如果从联网计算机运行此应用程序，请在本地复制并运行它。
+
+</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-localSecurityPolicy">安全例外</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-clipboardNoText">剪贴板无法转换为纯文本数据。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-clipboardNoText">剪贴板导入失败</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-noFileFound">指定的路径不存在。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-noFileFound">文件未找到</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-searchResults">搜索返回{0}个结果。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-searchResults">搜索完成</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-invalidRegex">正则表达式语法存在问题：
+{0}
+
+请单击正则表达式链接或访问论坛以获取有关创建正则表达式匹配项的更多帮助。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-invalidRegex">无效的正则表达式</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-pluginCompileError">编译插件源文件时出错。
+
+有关更多信息，请参阅插件信息面板。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-pluginCompileError">编译错误</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-pluginInvalid">该程序集没有实现ACT插件接口的类。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-pluginInvalid">插件无效</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-updateCheckFail">无法从网站获取版本信息。
+</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-updateCheckFail">版本检查失败</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-xmlPrefError">
+
+ 尝试默认设置</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-clipConnectError">
+
+指定的计算机是否正在运行ACT Clipboard Sharer应用程序？
+
+如果EQ2和ACT在同一系统上运行，请不要使用此功能</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-clipConnectError">剪贴板连接失败</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-serverStartError">无法启动服务器</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-feedbackNoConnect">与反馈服务器的连接失败</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-startupLogError">加载上一个日志文件时出错</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-error">错误</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-ftpTestSuccess">
+
+=============================
+测试成功完成。
+
+</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-ftpTestSuccess">测试完成</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-ftpTestFail">测试未完成</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-fileError">文件不可用</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-odbcQueryError">ODBC 连接查询失败</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-feedbackNoSend">发送反馈数据失败</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-complete">操作已经完成</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-loadError">加载错误</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-cullHistory">删除了{1}个总记录中的{0}个。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-cullHistory">剔除历史</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-htmlNoFileAccess">无法写入所需的文件。
+
+{0}</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-htmlNoFileAccess">访问文件被拒绝</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-parseComplete">解析在{0}秒内完成。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBoxTitle-parseComplete">解析完成</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-cbExFile">在战斗结束时，此选项将导出到宏文件，类似于剪贴板导出的外观。 此文件导出不限于剪贴板导出等256个字符，但它只能输出16行。 创建导出后，可以使用以下命令显示结果：
+
+/do_file_commands act-export.txt
+
+您可以创建宏来触发此命令。 宏文件导出将尝试将数据制表，以便更容易查看。
+
+您必须使用您希望预先显示导出的通道设置以下选项。 将通道前缀留空将导致宏文件无法运行，除非“纯文本格式”选项将通道前缀为*每*行。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-custom">自定义文字</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-custom">在追加之前，在上面的文本框中输入您的自定义文本。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-newline">新行</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-newline">此元素后的格式将显示在新行上。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-title">战斗标题</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-title">完成的战斗的标题。 这可能仅用于团队成员格式化。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-name">名称</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-name">队员名称</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-NAME">简称</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-NAME">队员的名字缩写为冒号后面的一些字符，如：“NAME:5”</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-duration">时长</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-duration">队员或战斗的持续时间，显示为mm:ss</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-DURATION">简化时长</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-DURATION">以秒为单位显示的队员或战斗的持续时间。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-damage">伤害</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-damage">自动攻击，法术，CA等对其他成员造成的伤害。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-damage%">伤害%</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-damage%">此值表示团队成员在此次战斗中所造成的所有伤害的百分比。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-dps">DPS</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-dps">队员的伤害总数除以其个人持续时间，格式为12.34</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-DPS">简化DPS</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-DPS">队员的伤害总数除以其个人持续时间，格式为12</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-extdps">战斗DPS</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-extdps">队员的伤害总数除以战斗的持续时间，格式为12.34  - 这比DPS更常用</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-EXTDPS">简化战斗DPS</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-EXTDPS">队员的伤害总数除以战斗的持续时间，格式为12  - 这比DPS更常用</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-hits">攻击次数</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-hits">造成伤害的攻击次数。例如一个咏唱成功造成伤害。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-crithits">暴击次数</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-crithits">攻击造成暴击的次数。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-misses">失误次数</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-misses">未命中的自动攻击或CA的数量。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-hitfailed">其他躲避</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-hitfailed">除了失误的任何类型的失败攻击次数。 这包括抵抗，反射，阻挡，躲避等。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-swings">挥动(攻击)</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-swings">攻击次数。这包括任何自动攻击或技能，还包括不会造成伤害的技能。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-tohit">击中%</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-tohit">攻击次数占挥动次数的百分比，格式为12.34</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-TOHIT">简化击中%</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-TOHIT">攻击次数占挥动次数的百分比，格式为12</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-maxhit">最高伤害</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-maxhit">最高单次命中伤害，格式为[Combatant-]SkillName-Damage#</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-MAXHIT">简化最高伤害</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-MAXHIT">最高单次命中伤害，格式为[Combatant-]Damage#</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-healed">治疗量</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-healed">来自该成员的所有治疗，康复或类似物的总数。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-healed%">治疗%</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-healed%">此值表示成员在此次战斗中所做的所有治疗的百分比。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-exthps">战斗HPS</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-exthps">成员的治疗总数除以战斗的持续时间，格式为12.34</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-EXTHPS">简化战斗HPS</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-EXTHPS">成员的治疗总数除以战斗的持续时间，格式为12</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-critheals">暴击治疗次数</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-critheals">暴击治疗的次数。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-heals">治疗次数</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-heals">来自这个队员的的总治疗次数。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-maxheal">最高治疗</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-maxheal">最高单次治疗量，格式为[Combatant-]SkillName-Healing#</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-MAXHEAL">简化最高治疗</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-MAXHEAL">最高单次治疗量，格式为[Combatant-]Healing#</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-maxhealward">最高治疗/康复</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-maxhealward">最高单次治疗/康复量，格式为[Combatant-]SkillName-Healing#</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-MAXHEALWARD">简化最高治疗/康复</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-MAXHEALWARD">最高单次治疗/康复量，格式为[Combatant-]Healing#</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-damagetaken">承伤</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-damagetaken">队员所受的伤害总量。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-healstaken">承疗</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-healstaken">队员所受的治疗总量。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-powerdrain">能量吸收</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-powerdrain">队员吸取的能量总量。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-kills">击杀</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-kills">队员造成击杀的次数。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-deaths">死亡</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-deaths">队员受到伤害死亡的次数。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-NAME3">名称(3字符)</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-NAME3">队员的名称，最多显示3个字符。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-NAME4">名称(4字符)</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-NAME4">队员的名称，最多显示4个字符。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-NAME5">名称(5字符)</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-NAME5">队员的名称，最多显示5个字符。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-NAME6">名称(6字符)</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-NAME6">队员的名称，最多显示6个字符。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-NAME7">名称(7字符)</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-NAME7">队员的名称，最多显示7个字符。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-NAME8">名称(8字符)</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-NAME8">队员的名称，最多显示8个字符。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-NAME9">名称(9字符)</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-NAME9">队员的名称，最多显示9个字符。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-NAME10">名称(10字符)</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-NAME10">队员的名称，最多显示10个字符。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-NAME11">名称(11字符)</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-NAME11">队员的名称，最多显示11个字符。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-NAME12">名称(12字符)</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-NAME12">队员的名称，最多显示12个字符。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-NAME13">名称(13字符)</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-NAME13">队员的名称，最多显示13个字符。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-NAME14">名称(14字符)</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-NAME14">队员的名称，最多显示14个字符。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-NAME15">名称(15字符)</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-NAME15">队员的名称，最多显示15个字符。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-cbMiniColumnAlign">启用后，文本导出将对齐到一个表中，其中每个单元格填充到该列中最长条目的长度。 对齐取决于所选的字体。 建议您使用文本格式化程序，例如{NAME10}而不是{name}，否则该列可能有过多的填充。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-cbExFileColumnAlign">启用后，文本导出将对齐到一个表中，其中每个单元格填充到该列中最长条目的长度。 建议您使用文本格式化程序，例如{NAME10}而不是{name}，或者该列可能有过多的填充。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-lblExFileLines">ACT只会创建包含这么多命令的宏文件。 注意：EQ2具有服务器端过滤功能，可防止公共频道中出现骚扰信息。无论如何，在短时间内您不能在公共频道中超过16个聊天命令。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-powerheal">传魔</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-powerheal">队员补充给队友的能量总量。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-crithit%">暴击比</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-crithit%">攻击中暴击的比例。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-critheal%">暴疗比</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-critheal%">治疗中暴击的比例。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-threatstr">仇恨增减</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-threatstr">增加/减少的仇恨输出量。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-threatdelta">仇恨差</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-threatdelta">相对于零的直接仇恨输出量。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-tab">制表符</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-tab">此元素后的格式将显示在相对列排列中。 （格式化示例无法正确显示）</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingLabel-cures">治愈或康复计数</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="exportFormattingDesc-cures">治愈或康复的总次数。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="The localized term for an AttackType object that contains swings merged from other AttackTypes" Key="attackTypeTerm-all">All</MiscTranslationEntry>
+  <MiscTranslationEntry Description="The localized term for the merged All encounter at the top of zone breakdowns" Key="mergedEncounterTerm-all">All</MiscTranslationEntry>
+  <MiscTranslationEntry Description="What appears in the Special column of an attack when the attack is normal" Key="specialAttackTerm-none">无</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-xmlShare">此部分用于导入自定义触发器或拼写计时器等设置的小片段。通常，这些片段将从游戏聊天中解析，但也可以从其他地方复制并粘贴。
+
+在聊天中检测到XML片段时，默认情况下，字符名称和数据类型将显示在第三个（黄色）ListBox中。然后，您可以单击数据以在右侧的TextBox中查看它，并导入或删除该条目。
+
+如果您希望始终从特定字符导入数据，可以在黄色ListBox上方的TextBox中输入其名称，然后单击上面的“添加”按钮。同样，有一个字符列表总是忽略来自的数据。您可以通过取消选中暂时禁用接受/拒绝条目，也可以只使用任一列表上的“删除”按钮。
+
+您可能会遇到来自为此功能制作的其他来源的XML片段。您可以将其直接粘贴到导入/删除按钮上方的较大TextBox中，而不是让某人通过告知将其发送给您。然后它将显示为自定义条目，允许您导入或删除它。
+
+您可以通过进入“拼写计时器”选项页面或“自定义触发器”选项卡，右键单击列表中的条目并选择“复制为可共享XML”，从您自己的数据创建一个片段。如果在EQ2聊天中发送，则XML片段必须是独立的，没有其他聊天或空格。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-xmlSubscription">此部分用于跟踪外部ACT设置。 XML配置文件可以放在Web上，在启动时或按需时，ACT可以检查这些文件的更新（基于时间戳）。可以将ACT设置为自动导入或通知用户这些更新。
+
+顶部ListBox将包含已经被监视的文件的外部URL。要添加条目，请在标记的TextBox中输入URL，选择更新选项，然后单击添加/编辑。作为更新选项，您可以进行ACT检查但忽略更新的文件，使用消息框通知您更新，或者在检测到更新时自动导入外部XML文件。 “查询URL”按钮将列出URL的常规内容（如果有效），并列出标记为已更改的列表。浏览器中的视图链接将在默认Web浏览器中打开URL。
+
+“立即检查”按钮将按需检查所有URL以进行更改，并选中更新的文件。如果URL已更新但设置为忽略，则会使用灰色复选标记进行标记。您可以通过单击手动选中或取消选中该条目。
+
+“更新已检查”按钮将导入具有正常复选标记的所有条目，无论它们是否被检测为已更改。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-ColorRestart">更改这些颜色将需要重新启动ACT。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-btnResetColors">重置颜色/字体设置将需要重新启动ACT。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-rbSParseFull">完全选择性解析应仅用于附近有其他组的小组。 遇到开始时，设置将锁定到该遭遇。 使用此功能可能导致ExtDPS计算与ACT或其他解析器的其他副本不同，具体取决于它们使用的限制选项。 一旦发生了遭遇，你就无法在没有解除战斗的情况下添加或移除战斗员。 完全选择性解析将产生数据缺口，在使用ACT分析战斗或统计数据时不应使用它，因为它不会显示遭遇的完整“图片”。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-btnImportFile">要从日志文件导入战斗，请使用选择器选择开始日期和结束日期，然后选择要解析的日志文件。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-cbGCollectOnClear">启用此选项将导致ACT在清除战斗时调用垃圾回收。 执行此操作将导致清除战斗按钮花费更长时间，并且已知完全冻结ACT，直至重新启动。 只有在ACT出现问题，不会释放内存时才应该使用它。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-cbAutoLoadLogs">ACT每隔几秒检查一次现有日志是否已更新，并切换到当前使用的日志。 （它不会自动检查新文件）</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-lblSplitFile">只要另一个程序没有锁定文件，ACT将尝试在打开或关闭文件时使用日期重命名该文件。 （超过这个尺寸时）</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-lblExportSound">ACT在战斗后手动或立即创建剪贴板导出，宏导出等的声音。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-cbLcdEnabled">这将使ACT支持G15和G19键盘或使用这些统一驱动程序的其他设备。 对于默认小程序：按钮1（共4位）（G15）或菜单按钮（G19）将更改ACT模式。 下一个按钮（G15）或OK按钮（G19）通常会改变该模式下的子模式，例如切换导出格式。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-lblLcdMiniFormat">此LCD模式模拟ACT中的迷你窗口。 此选择器更改显示的导出格式，也可以使用G19的第二个按钮或G19的OK按钮进行翻转。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-lblPersonalParseFormat">与所有其他成员的重复格式不同，此LCD模式将创建仅包含您个人数据的导出。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-Options_LcdMono">本节将定义G15特定小程序的外观。 使用“字体”按钮选择要用于所有屏幕的基本字体。 要调整字体大小，请使用该模式的“大小偏移”数字选择器。 当您更改字体大小以满足您的需要时，还要调整每行的垂直间距。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-Options_LcdColor">本节将定义G19特定小程序的外观。 使用“更改字体”按钮更改特定模式的字体/大小。 另请注意，更改字体大小可能需要您更改垂直间距才能正确显示。 您也可以更改这些模式的基本颜色。 法术计时器和图形模式模仿ACT的颜色正常设置。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-Options_TableZone">这些是在单击TreeView节点（例如“Import / Merge [1]”或“ZoneName [3] 12:00:00 PM”）时将出现在Main选项卡表中的列。 此表列出了该节点（区域）的所有战斗。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-Options_TableEnc">这些是在单击TreeView节点（例如“Mobname  -  [1:23] 12:01:02 PM'）时将出现在Main选项卡表中的列。 此表列出了所选战斗的所有成员。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-Options_TableCombatant">这些是单击TreeView节点（如“PlayerName”或“MobName”）时将出现在Main选项卡表中的列。 该表列出了成员的所有伤害类型类别。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-Options_TableDamageType">这些是在单击TreeView节点（例如“Outgoing Damage”或“Healed”）时将出现在Main选项卡表中的列。 此表列出了所选损伤类型类别的所有技能名称。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-Options_TableAttackType">这些是在单击TreeView节点（例如'crush'或'Smite'）时将出现在Main选项卡表中的列。 此表列出了所选技能名称的所有单独作战动作。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="Help Panel Mouseover" Key="helpPanel-Options_MiniParse">Mini Parse窗口是当前战斗的小文本显示。 如果单击角落中的红色按钮，它也可能会显示图形。 要更改包含的信息，请创建新导出格式的预设。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-tbExFileName">此导出文件名是游戏文件夹的相对文件路径，也可以是绝对路径。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-ccEncLabel1">所有敌人被击败时的战斗的颜色。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-ccEncLabel2">结果未知时的战斗的颜色。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-ccEncLabel3">所有队员被击败时的战斗的颜色。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-ccDGAllyText">被标记为队员的成员名称的前景色。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-ccDGPersonalBackcolor">包含您的队友的主表行的背景颜色。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-Options_SelectiveParsing">选择性解析的目的是限制出现的数据。 左侧的清单决定了哪些成员的数据用于数据/出口。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-IO_ImportClip">按导入剪贴板按钮导入剪贴板内容，就像导入日志文件一样。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-IO_ExportAct">此功能将导出压缩的二进制文件，该文件稍后可由ACT导入以重新创建战斗。 如果要将多个战斗导出为单个文件，请使用“主”选项卡上的“显示复选框”功能。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-IO_ExportHtml">此功能会将选定的遭遇导出到单个静态HTML文件中，然后由JavaScript和CSS控制</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-Options_Odbc">本节用于将ACT数据导出到SQL数据源中。 ACT使用ODBC连接以连接到这些数据源，并且本地计算机必须安装ODBC驱动程序才能与所需类型的数据源进行通信。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-IO_XmlFile">此功能是由用户请求添加的。 我不知道它有什么实际用途。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-IO_ImportLog">在选择要解析的文件之前，请选择起点和终点。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-IO_ImportAct">此功能专门用于导入ACT导出的*.act文件。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-" />
+</ArrayOfMiscTranslationEntry>

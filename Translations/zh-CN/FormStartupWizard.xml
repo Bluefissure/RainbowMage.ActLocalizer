@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ControlText Form="FormStartupWizard">
+    <Control ControlPath="root" UniqueName="btnClose" Text="关闭" />
+    <Control ControlPath="root" UniqueName="btnBack" Text="&lt; 返回" />
+    <Control ControlPath="root" UniqueName="btnNext" Text="下一步 &gt;" />
+    <Control ControlPath="root\tabControl1" UniqueName="tabPage1" Text="开始" />
+    <Control ControlPath="root\tabControl1\tabPage1" UniqueName="label1" Text="该向导将帮助您选择解析插件，配置更新和选择日志文件。" />
+    <Control ControlPath="root\tabControl1" UniqueName="tabPage4" Text="解析插件" />
+    <Control ControlPath="root\tabControl1\tabPage4" UniqueName="label8" Text="确保为正在进行的游戏选择合适的插件。 （用粗体红色标出）" />
+    <Control ControlPath="root\tabControl1\tabPage4" UniqueName="label7" Text="ACT本身没有任何解析游戏日志文件的能力。 您必须使用外部插件来解析来自不同游戏的日志文件。 单击下面的按钮以获取ACT网站上可用的解析插件列表。 选择后，单击“使用此插件按钮”以启用它。 不要一次启用多个解析插件。" />
+    <Control ControlPath="root\tabControl1\tabPage4" UniqueName="btnUsePlugin" Text="2: 使用此插件" />
+    <Control ControlPath="root\tabControl1\tabPage4" UniqueName="btnGetPluginTitles" Text="1: 获取可用的解析插件" />
+    <Control ControlPath="root\tabControl1" UniqueName="tabPage2" Text="日志文件" />
+    <Control ControlPath="root\tabControl1\tabPage2" UniqueName="label3" Text="每次切换角色时，ACT都可以检测到正在使用的其他日志文件，并自动切换到该文件。" />
+    <Control ControlPath="root\tabControl1\tabPage2" UniqueName="cbAutoLogSwitch" Text="自动加载最近更改的日志文件。" />
+    <Control ControlPath="root\tabControl1" UniqueName="tabPage3" Text="启动设置" />
+    <Control ControlPath="root\tabControl1\tabPage3" UniqueName="label6" Text="在启动、退出或角色切换时，ACT将尝试重命名最后打开的日志文件（如果它大于列出的大小）。 这可能需要管理权限，并且不适用于当前正在写入的文件。&#xD;&#xA;&#xD;&#xA;此操作仅仅是为了方便导入旧文件或在文本编辑器中打开它们。 更改此设置时没有实时性能考虑因素。" />
+    <Control ControlPath="root\tabControl1\tabPage3" UniqueName="label5" Text="兆字节。 （0将禁用）" />
+    <Control ControlPath="root\tabControl1\tabPage3" UniqueName="nudLogSplitSize" Text="64" />
+    <Control ControlPath="root\tabControl1\tabPage3" UniqueName="label4" Text="尝试每次拆分日志文件" />
+    <Control ControlPath="root\tabControl1\tabPage3" UniqueName="label2" Text="启用此功能将允许ACT和可能的插件在每次启动时检查新版本。 建议启用此功能以保持最新的修复/添加。 （需要Internet连接）" />
+    <Control ControlPath="root\tabControl1\tabPage3" UniqueName="cbAutoVerCheck" Text="自动版本检查" />
+</ControlText>

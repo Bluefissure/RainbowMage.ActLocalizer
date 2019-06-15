@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ControlText Form="FormSpellTimers">
+    <Control ControlPath="root" UniqueName="btnClearSearch" Text="清除" />
+    <Control ControlPath="root" UniqueName="tbSearch" Text="搜索名称或提示" />
+    <Control ControlPath="root" UniqueName="groupBox1" Text="计时器详细设置" />
+    <Control ControlPath="root\groupBox1\tableLayoutPanel2" UniqueName="label17" Text="技能/法术/触发器 名称" />
+    <Control ControlPath="root\groupBox1\tableLayoutPanel2" UniqueName="label1" Text="计时器持续时长（秒）" />
+    <Control ControlPath="root\groupBox1\tableLayoutPanel2" UniqueName="nudTimerRemove" Text="-15" />
+    <Control ControlPath="root\groupBox1\tableLayoutPanel2" UniqueName="label9" Text="计时器消失时长（秒）" />
+    <Control ControlPath="root\groupBox1\tableLayoutPanel2" UniqueName="nudRecastDelay" Text="30" />
+    <Control ControlPath="root\groupBox1\tableLayoutPanel2" UniqueName="label3" Text="计时器警报时间（秒）" />
+    <Control ControlPath="root\groupBox1\tableLayoutPanel2" UniqueName="nudTimerWarning" Text="10" />
+    <Control ControlPath="root\groupBox1\tableLayoutPanel2" UniqueName="label23" Text="过滤区域或敌人类别" />
+    <Control ControlPath="root\groupBox1\tableLayoutPanel2" UniqueName="label22" Text="类别" />
+    <Control ControlPath="root\groupBox1\tableLayoutPanel2" UniqueName="label21" Text="显示在面板 B" />
+    <Control ControlPath="root\groupBox1\tableLayoutPanel2" UniqueName="label20" Text="显示在面板 A" />
+    <Control ControlPath="root\groupBox1\tableLayoutPanel2" UniqueName="label19" Text="允许敌人影响计时器" />
+    <Control ControlPath="root\groupBox1\tableLayoutPanel2" UniqueName="label18" Text="圆形计时器" />
+    <Control ControlPath="root\groupBox1\tableLayoutPanel2" UniqueName="label4" Text="只监视&quot;白名单&quot;" />
+    <Control ControlPath="root\groupBox1\tableLayoutPanel2" UniqueName="label2" Text="剩余时间内忽略计时重启" />
+    <Control ControlPath="root\groupBox1\tableLayoutPanel2" UniqueName="tbCategory" Text=" 通用" />
+    <Control ControlPath="root\groupBox1\tableLayoutPanel2" UniqueName="label24" Text="不使用复数DoT计时条" />
+    <Control ControlPath="root\splitContainer2\" UniqueName="btnAddEdit" Text="添加/&amp;编辑" />
+    <Control ControlPath="root\splitContainer2\" UniqueName="btnRemove" Text="&amp;删除" />
+    <Control ControlPath="root" UniqueName="groupBox4" Text="计时器白名单" />
+    <Control ControlPath="root\groupBox4" UniqueName="btnWhiteListRemove" Text="删除" />
+    <Control ControlPath="root\groupBox4" UniqueName="btnWhiteListAdd" Text="添加" />
+    <Control ControlPath="root\groupBox4" UniqueName="tbWhiteList" Text="玩家" />
+    <Control ControlPath="root" UniqueName="groupBox3" Text="全局设置" />
+    <Control ControlPath="root\groupBox3\tableLayoutPanel1" UniqueName="label8" Text="设置" />
+    <Control ControlPath="root\groupBox3\tableLayoutPanel1" UniqueName="nudTimersOpacity2" Text="100" />
+    <Control ControlPath="root\groupBox3\tableLayoutPanel1" UniqueName="nudTimersOpacity" Text="100" />
+    <Control ControlPath="root\groupBox3\tableLayoutPanel1" UniqueName="nudTimerScale2" Text="1.0" />
+    <Control ControlPath="root\groupBox3\tableLayoutPanel1" UniqueName="label11" Text="面板透明度 (%)" />
+    <Control ControlPath="root\groupBox3\tableLayoutPanel1" UniqueName="label12" Text="面板 A" />
+    <Control ControlPath="root\groupBox3\tableLayoutPanel1" UniqueName="nudTimerScale" Text="1.0" />
+    <Control ControlPath="root\groupBox3\tableLayoutPanel1" UniqueName="label13" Text="面板 B" />
+    <Control ControlPath="root\groupBox3\tableLayoutPanel1" UniqueName="label10" Text="显示比例缩放" />
+    <Control ControlPath="root\groupBox3\tableLayoutPanel1" UniqueName="label14" Text="置顶" />
+    <Control ControlPath="root\groupBox3\tableLayoutPanel1" UniqueName="label15" Text="鼠标穿透" />
+    <Control ControlPath="root\groupBox3\tableLayoutPanel1" UniqueName="label16" Text="可见" />
+    <Control ControlPath="root" UniqueName="groupBox2" Text="计时器声音/警报/颜色" />
+    <Control ControlPath="root\groupBox2" UniqueName="label7" Text="计时器开始时声音" />
+    <Control ControlPath="root\groupBox2" UniqueName="label6" Text="自定义提示" />
+    <Control ControlPath="root\groupBox2" UniqueName="label5" Text="计时器警报时声音" />
+    <Control ControlPath="root\groupBox2" UniqueName="btnWarningWavBrowse" Text="..." />
+    <Control ControlPath="root\groupBox2" UniqueName="btnStartWavBrowse" Text="..." />
+</ControlText>

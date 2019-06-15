@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ControlText Form="FormImportProgress">
+    <Control ControlPath="root" UniqueName="gbPov" Text="PoV" />
+    <Control ControlPath="root\gbPov" UniqueName="btnLastKnownName" Text="." />
+    <Control ControlPath="root\gbPov" UniqueName="btnOk" Text="使用上述设定" />
+    <Control ControlPath="root\gbPov" UniqueName="label1" Text="角色名：" />
+    <Control ControlPath="root\gbPov" UniqueName="tbLastKnownName" Text="." />
+    <Control ControlPath="root" UniqueName="groupBox3" Text="批量统计" />
+    <Control ControlPath="root\groupBox3" UniqueName="lblBatchStats" Text="." />
+    <Control ControlPath="root\groupBox3" UniqueName="lblLabels2" Text="经过时间:&#xD;&#xA;读取行数:&#xD;&#xA;LPS:&#xD;&#xA;角色读取:&#xD;&#xA;CPS:&#xD;&#xA;" />
+    <Control ControlPath="root" UniqueName="groupBox2" Text="文件统计" />
+    <Control ControlPath="root\groupBox2" UniqueName="lblFileStats" Text="." />
+    <Control ControlPath="root\groupBox2" UniqueName="lblLabels" Text="经过时间:&#xD;&#xA;读取行数:&#xD;&#xA;LPS:&#xD;&#xA;角色读取:&#xD;&#xA;CPS:" />
+    <Control ControlPath="root" UniqueName="groupBox1" Text="进度" />
+    <Control ControlPath="root\groupBox1" UniqueName="lblFileProgress" Text="进度： 0%" />
+    <Control ControlPath="root\groupBox1" UniqueName="lblBatchCount" Text="批数据 0 of 0" />
+    <Control ControlPath="root\groupBox4" UniqueName="btnClose" Text="关闭" />
+</ControlText>
