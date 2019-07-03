@@ -104,7 +104,7 @@
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_EncCulling\groupBox30" UniqueName="cbCullNoAlly" Text="隐藏首页记录列表标记为&quot;Encounter&quot;的战斗。（无团队）" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_EncCulling\groupBox30" UniqueName="cbCullCountIgnoreNoAlly" Text="被手动标记的战斗记录不受上述规则影响。" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_EncCulling\groupBox30" UniqueName="cbCullCount" Text="首页记录列表保留的最大记录数量：" />
-    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_EncCulling\groupBox30" UniqueName="cbCullTimer" Text="首页记录列表隐藏多少分钟钱的记录：" />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_EncCulling\groupBox30" UniqueName="cbCullTimer" Text="首页记录列表隐藏多少分钟前的记录：" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_EncCulling" UniqueName="groupBox31" Text="区域隐藏设置" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_EncCulling\groupBox31" UniqueName="cbCullOther" Text="首页记录列表保留多少个区域的其他战斗：" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_EncCulling\groupBox31" UniqueName="cbCullAll" Text="首页记录列表保留多少个区域的'All'战斗：" />
