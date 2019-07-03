@@ -9,12 +9,23 @@ def readfrom_xml(xml_file, languge, textdict=None):
         textdict = defaultdict(dict)
     DOMTree = xml.dom.minidom.parse(xml_file)
     collection = DOMTree.documentElement
-    texts = collection.getElementsByTagName("Control")
-    for text in texts:
-        if text.hasAttribute("Text") and text.hasAttribute("UniqueName"):
-            textdict[text.getAttribute("UniqueName")].update({
-                    languge: text.getAttribute("Text"),
-                })
+    if collection.hasAttribute("Form"):
+        print("Element Type:{}".format(collection.getAttribute("Form")))
+        texts = collection.getElementsByTagName("Control")
+        for text in texts:
+            unique_key = "{}:{}".format(text.getAttribute("ControlPath"), text.getAttribute("UniqueName"))
+            if text.hasAttribute("Text") and text.hasAttribute("UniqueName"):
+                textdict[unique_key].update({
+                        languge: text.getAttribute("Text"),
+                    })
+    elif collection.getElementsByTagName("TreeViewTranslationEntry"):
+        entries = collection.getElementsByTagName("TreeViewTranslationEntry")
+        for entry in entries:
+            unique_key = "{}:{}".format("TreeViewTranslationEntry", entry.getAttribute("Original"))
+            if entry.hasAttribute("Original"):
+                textdict[unique_key].update({
+                        languge: entry.firstChild.data,
+                    })
     return textdict
 
 def parse_file(filename):
@@ -32,6 +43,6 @@ def parse_file(filename):
                 output_set.add(en_str)
 
 if __name__=="__main__":
-    for file in ["FormActMain.xml"]:
+    for file in ["FormActMain.xml", "ConfigTreeView.xml"]:
         parse_file(file)
         print("Parsed {}".format(file))
