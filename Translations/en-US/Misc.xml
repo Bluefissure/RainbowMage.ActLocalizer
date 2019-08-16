@@ -385,5 +385,8 @@ The Update Checked button will import all entries with a normal checkmark regard
   <MiscTranslationEntry Description="" Key="helpPanel-IO_XmlFile">This feature was added by user request.  I don't know of any practical use for it.</MiscTranslationEntry>
   <MiscTranslationEntry Description="" Key="helpPanel-IO_ImportLog">Select the starting and end points before selecting the file to parse.</MiscTranslationEntry>
   <MiscTranslationEntry Description="" Key="helpPanel-IO_ImportAct">This feature is specifically for importing *.act files exported by ACT.</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-Options_Sound">This panel will configure the different sounds ACT will generally make for different events.  Command sounds are when you interact with ACT by typing in a game, like '/act end' or '/e end'.  Misc sounds are when ACT tries to randomly get your attention for a miscellaneous purpose.  This could be an update or even an error playing a non-existent sound.
+
+The bottom radio buttons change through what API ACT tries to make sounds through.  Windows API is very basic for compatibility purposes.  WMP is sufficient in most cases.</MiscTranslationEntry>
   <MiscTranslationEntry Description="" Key="helpPanel-" />
 </ArrayOfMiscTranslationEntry>

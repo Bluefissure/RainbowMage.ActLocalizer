@@ -385,5 +385,8 @@
   <MiscTranslationEntry Description="" Key="helpPanel-IO_XmlFile">此功能是由用户请求添加的。 我不知道它有什么实际用途。</MiscTranslationEntry>
   <MiscTranslationEntry Description="" Key="helpPanel-IO_ImportLog">在选择要解析的文件之前，请选择起点和终点。</MiscTranslationEntry>
   <MiscTranslationEntry Description="" Key="helpPanel-IO_ImportAct">此功能专门用于导入ACT导出的*.act文件。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="helpPanel-Options_Sound">此面板将配置ACT通常为不同事件使用的不同声音。 命令声音是指您通过游戏内命令与ACT交互时播放的声音，例如'/act end'或'/e end'。 其他声音是当ACT以其他目的试图引起您的注意时播放的声音。 如果播放不存在的声音可能产生错误。
+
+底部的单选按钮会改变API ACT试图发出的声音。 Windows API基本用于保证老版本的兼容性。 在大多数情况下，WMP就足够了。</MiscTranslationEntry>
   <MiscTranslationEntry Description="" Key="helpPanel-" />
 </ArrayOfMiscTranslationEntry>

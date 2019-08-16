@@ -14,23 +14,6 @@
     <Control ControlPath="root\tc1\tpMain\pLeftView\pTvBtns" UniqueName="btnDeleteChecked" Text="Delete Checked" />
     <Control ControlPath="root\tc1\tpMain\pLeftView\pTvBtns" UniqueName="cbShowChecks" Text="Show Checkboxes (Merge/Delete)" />
     <Control ControlPath="root\tc1\tpMain\pLeftView\pTvBtns" UniqueName="cbLockDG" Text="&amp;Disable Table Auto-Refresh" />
-    <Control ControlPath="root\tc1" UniqueName="tpAbout" Text="About" />
-    <Control ControlPath="root\tc1\tpAbout" UniqueName="groupBox14" Text="Send Bugs or Feedback" />
-    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="rtbFeedback" Text="Type comments here, then click Submit." />
-    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="lblFeedback" Text="If you wish to send a private message regarding the main ACT program, feel free to use this submission form.  Plugins that I did not author, I may not be able to help with.  &#xD;&#xA;&#xD;&#xA;If you want a prompt response, I strongly suggest using the ACT website forums or email.  Find links above." />
-    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="btnFeedbackSubmit" Text="Submit" />
-    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="cbFeedbackLogs" Text="Include error logs from          &quot;Advanced Combat Tracker.log&quot;" />
-    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="tbFeedbackEmail" Text="&lt;Optional return email address&gt;" />
-    <Control ControlPath="root\tc1\tpAbout" UniqueName="gbAbout" Text="About" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="linkLabelAppData" Text="App Data Folder" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="cbAutoCheck" Text="Auto Version Check" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="btnCheckVer" Text="Check Version Now" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="label5" Text="Version:" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="linkURL" Text="Main Website" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="label4" Text="Made by EQAditu (EQ2-Skyfire)" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="linkEmail" Text="aditu@advancedcombattracker.com" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="lblVersion" Text="3.3.4     Release: 259" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="label7" Text="Visit:" />
     <Control ControlPath="root\tc1" UniqueName="tpOptions" Text="Options" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_XmlShare" UniqueName="groupBox4" Text="Incoming XML Shares" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_XmlShare\groupBox4\tableLayoutPanel2" UniqueName="btnShareDelete" Text="Delete Above Data" />
@@ -140,9 +123,9 @@
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_TableEnc" UniqueName="btnTableDefaults" Text="Reset Columns to Default" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_TableEnc" UniqueName="gbTableDepth2" Text="Encounter View" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_TableEnc\gbTableDepth2" UniqueName="lblSortby1" Text="Sort #1:" />
-    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_TableEnc\gbTableDepth2" UniqueName="btnEDSort" Text="Damage%" />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_TableEnc\gbTableDepth2" UniqueName="btnEDSort" Text="EncDPS" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_TableEnc\gbTableDepth2" UniqueName="label47" Text="Sort #2:" />
-    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_TableEnc\gbTableDepth2" UniqueName="btnEDSort2" Text="Damage%" />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_TableEnc\gbTableDepth2" UniqueName="btnEDSort2" Text="Duration" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_TableCombatant" UniqueName="btnTableDefaults" Text="Reset Columns to Default" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_TableCombatant" UniqueName="gbTableDepth3" Text="Combatant View" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_TableDamageType" UniqueName="btnTableDefaults" Text="Reset Columns to Default" />
@@ -153,9 +136,9 @@
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_TableDamageType\gbTableDepth4" UniqueName="btnMDSort2" Text="Duration" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_TableAttackType" UniqueName="gbTableDepth5" Text="Attack Type View" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_TableAttackType\gbTableDepth5" UniqueName="lblSortby3" Text="Sort #1:" />
-    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_TableAttackType\gbTableDepth5" UniqueName="btnATSort" Text="EncId" />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_TableAttackType\gbTableDepth5" UniqueName="btnATSort" Text="Time" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_TableAttackType\gbTableDepth5" UniqueName="label49" Text="Sort #2:" />
-    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_TableAttackType\gbTableDepth5" UniqueName="btnATSort2" Text="EncId" />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_TableAttackType\gbTableDepth5" UniqueName="btnATSort2" Text="Time" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_TableAttackType" UniqueName="btnTableDefaults" Text="Reset Columns to Default" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_MainTableGen\groupBox6" UniqueName="cbTableCommas" Text="Show thousand separators in the Main tab tables" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_MainTableGen\groupBox6" UniqueName="cbReverseSort" Text="Reverse the sorting order of the main table.  (Decending order)" />
@@ -262,24 +245,36 @@
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_WebServer\groupBox28" UniqueName="cbWebServerEnabled" Text="Enable Web Server" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_WebServer\groupBox28" UniqueName="lblWebServerConnections" Text="Server Status" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_WebServer\groupBox28" UniqueName="nudWebServerPort" Text="80" />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel6" UniqueName="rbSndMiscTTS" Text="TTS:" />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel6" UniqueName="rbSndMiscNone" Text="None" />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel6" UniqueName="rbSndMiscWAV" Text="WAV:" />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel6" UniqueName="rbSndMiscBeep" Text="Beep" />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel6" UniqueName="lblMiscSound" Text="Misc sound:" />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel6" UniqueName="btnSndMiscBrowse" Text="..." />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel5" UniqueName="rbSndCommandTTS" Text="TTS " />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel5" UniqueName="rbSndCommandNone" Text="None" />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel5" UniqueName="rbSndCommandWAV" Text="WAV:" />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel5" UniqueName="rbSndCommandBeep" Text="Beep" />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel5" UniqueName="lblCommandSound" Text="Command sound:" />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel5" UniqueName="btnSndCommandBrowse" Text="..." />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\pAudioDevice" UniqueName="rbSndPlugin" Text="No internal sound (Plugin or no sound)" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\pAudioDevice" UniqueName="rbSndWmpApi" Text="Use WMP API Sound (Volume control, multiple sounds, slight latency)" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\pAudioDevice" UniqueName="rbSndWinApi" Text="Use Windows API Sound  (No volume control, one sound at a time)" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\pAudioDevice" UniqueName="label93" Text="TTS Vol" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\pAudioDevice" UniqueName="label12" Text="Wav Vol" />
-    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel4" UniqueName="rbSndTimerTTS" Text="TTS:" />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel4" UniqueName="rbSndTimerTTS" Text="TTS " />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel4" UniqueName="rbSndTimerNone" Text="None" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel4" UniqueName="rbSndTimerWAV" Text="WAV:" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel4" UniqueName="rbSndTimerBeep" Text="Beep" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel4" UniqueName="lblTimerExpireSound" Text="Timer expiration:" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel4" UniqueName="btnSndTimerBrowse" Text="..." />
-    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel3" UniqueName="rbSndWarnTTS" Text="TTS:" />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel3" UniqueName="rbSndWarnTTS" Text="TTS " />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel3" UniqueName="rbSndWarnNone" Text="None" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel3" UniqueName="rbSndWarnWAV" Text="WAV:" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel3" UniqueName="rbSndWarnBeep" Text="Beep" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel3" UniqueName="lblTimerWarningSound" Text="Timer warning:" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel3" UniqueName="btnSndWarnBrowse" Text="..." />
-    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel2" UniqueName="rbSndStartTTS" Text="TTS:" />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel2" UniqueName="rbSndStartTTS" Text="TTS " />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel2" UniqueName="rbSndStartNone" Text="None" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel2" UniqueName="rbSndStartWAV" Text="WAV:" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel2" UniqueName="rbSndStartBeep" Text="Beep" />
@@ -411,6 +406,7 @@
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_ColorMisc\groupBox1\ccSpellTimerWarnColor" UniqueName="lblText" Text="Spell Timer Warning Color" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_ColorMisc\groupBox1" UniqueName="ccSpellTimerBackColor" Text="Spell Timer Window Back Color" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_ColorMisc\groupBox1\ccSpellTimerBackColor" UniqueName="lblText" Text="Spell Timer Window Back Color" />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Misc" UniqueName="cbUnblockFiles" Text="Scan ACT folders and plugins for Internet downloads to unblock." />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Misc" UniqueName="nudCtThreads" Text="1" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Misc" UniqueName="label1" Text="Custom Trigger parsing may spawn up to this many additional threads: " />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Misc" UniqueName="groupBox11" Text="Cross Computer Clipboard Sharing" />
@@ -567,4 +563,21 @@
     <Control ControlPath="root\tc1\tpHistory\groupBox4" UniqueName="cbRecordSearchZones" Text="Search zone names" />
     <Control ControlPath="root\tc1\tpHistory\groupBox4" UniqueName="btnRecordSearchDateTime" Text="Search by Date/Time" />
     <Control ControlPath="root\tc1\tpHistory\groupBox4" UniqueName="btnRecordSearchText" Text="Search by Text" />
+    <Control ControlPath="root\tc1" UniqueName="tpAbout" Text="About" />
+    <Control ControlPath="root\tc1\tpAbout" UniqueName="groupBox14" Text="Send Bugs or Feedback" />
+    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="rtbFeedback" Text="Type comments here, then click Submit." />
+    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="lblFeedback" Text="If you wish to send a private message regarding the main ACT program, feel free to use this submission form.  Plugins that I did not author, I may not be able to help with.  &#xD;&#xA;&#xD;&#xA;If you want a prompt response, I strongly suggest using the ACT website forums or email.  Find links above." />
+    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="btnFeedbackSubmit" Text="Submit" />
+    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="cbFeedbackLogs" Text="Include error logs from          &quot;Advanced Combat Tracker.log&quot;" />
+    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="tbFeedbackEmail" Text="&lt;Optional return email address&gt;" />
+    <Control ControlPath="root\tc1\tpAbout" UniqueName="gbAbout" Text="About" />
+    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="linkLabelAppData" Text="App Data Folder" />
+    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="cbAutoCheck" Text="Auto Version Check" />
+    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="btnCheckVer" Text="Check Version Now" />
+    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="label5" Text="Version:" />
+    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="linkURL" Text="Main Website" />
+    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="label4" Text="Made by EQAditu (EQ2-Skyfire)" />
+    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="linkEmail" Text="aditu@advancedcombattracker.com" />
+    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="lblVersion" Text="3.4.1     Release: 261" />
+    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="label7" Text="Visit:" />
 </ControlText>
