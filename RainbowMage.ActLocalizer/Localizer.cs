@@ -46,12 +46,39 @@ namespace RainbowMage.ActLocalizer
             { "oFormXmlSettingsIO", typeof(FormXmlSettingsIO) },
         };
 
+        private static Dictionary<string, Type> pluginsToLocalize = new Dictionary<string, Type>()
+        {
+            { "oFormActMain", typeof(FormActMain) },
+            { "oFormAlliesEdit", typeof(FormAlliesEdit) },
+            { "oFormAvoidanceReport", typeof(FormAvoidanceReport) },
+            { "oFormByCombatantLookup", typeof(FormByCombatantLookup) },
+            { "oFormCombatantSearch", typeof(FormCombatantSearch) },
+            { "oFormEncounterLogs", typeof(FormEncounterLogs) },
+            { "oFormEncounterVcr", typeof(FormEncounterVcr) },
+            { "oFormExportFormat", typeof(FormExportFormat) },
+            { "oFormGetPlugins", typeof(FormGetPlugins) },
+            { "oFormImportProgress", typeof(FormImportProgress) },
+            { "oFormMiniParse", typeof(FormMiniParse) },
+            { "oFormPerformanceWizard", typeof(FormPerformanceWizard) },
+            { "oFormResistsDeathReport", typeof(FormResistsDeathReport) },
+            { "oFormSpellRecastCalc", typeof(FormSpellRecastCalc) },
+            { "oFormSpellTimers", typeof(FormSpellTimers) },
+            { "oFormSpellTimersPanel", typeof(FormSpellTimersPanel) },
+            { "oFormSpellTimersPanel2", typeof(FormSpellTimersPanel) },
+            { "oFormSqlQuery", typeof(FormSqlQuery) },
+            { "oFormStartupWizard", typeof(FormStartupWizard) },
+            { "oFormTimeLine", typeof(FormTimeLine) },
+            { "oFormUpdater", typeof(FormUpdater) },
+            { "oFormXmlSettingsIO", typeof(FormXmlSettingsIO) },
+        };
+
         public void Localize()
         {
             try
             {
                 LocalizeForms();
                 LocalizeConfigTreeView();
+                LocalizeIOTreeView();
                 LocalizeMisc();
             }
             catch (Exception e)
@@ -124,6 +151,52 @@ namespace RainbowMage.ActLocalizer
             }
         }
 
+        private void LocalizeIOTreeView()
+        {
+            //return;
+            var bindingFlags = BindingFlags.NonPublic | BindingFlags.GetField | BindingFlags.SetField | BindingFlags.Instance;
+            var tvIoInfo = typeof(FormActMain).GetField("tvIo", bindingFlags);
+            var ioControlSets = typeof(FormActMain).GetField("ioControlSets", bindingFlags);
+
+            var tvIo = tvIoInfo.GetValue(ActGlobals.oFormActMain) as TreeView;
+            var optionsControlSets = ioControlSets.GetValue(ActGlobals.oFormActMain) as Dictionary<string, List<Control>>;
+
+            var serializer = new XmlSerializer(typeof(List<TreeViewTranslationEntry>));
+            using (var stream = new FileStream(GetLocalizerXmlPath(this.Locale, "IoTreeView.xml"), FileMode.Open, FileAccess.Read))
+            {
+                var list = serializer.Deserialize(stream) as List<TreeViewTranslationEntry>;
+
+                foreach (TreeNode node in tvIo.Nodes)
+                {
+                    ApplyTranslationsForNodes(node, list);
+                }
+
+                var newOptionControlSets = new Dictionary<string, List<Control>>();
+                foreach (var pair in optionsControlSets)
+                {
+                    var translated = "";
+                    foreach (var eng in pair.Key.Split('\\'))
+                    {
+                        var query = list.Where(x => x.Original == eng);
+                        if (query.Any())
+                        {
+                            translated += query.First().Translated;
+                        }
+                        else
+                        {
+                            translated += eng;
+                        }
+                        translated += "\\";
+                    }
+                    translated = translated.TrimEnd('\\');
+
+                    newOptionControlSets.Add(translated, pair.Value);
+                }
+
+                ioControlSets.SetValue(ActGlobals.oFormActMain, newOptionControlSets);
+            }
+        }
+
         private void LocalizeMisc()
         {
             var serializer = new XmlSerializer(typeof(List<MiscTranslationEntry>));
@@ -168,6 +241,18 @@ namespace RainbowMage.ActLocalizer
                 importInfo.Invoke(formInfo.GetValue(null), new object[] { xmlPath });
             }
 
+            // Plugins
+            foreach (var pair in pluginsToLocalize)
+            {
+                Directory.CreateDirectory(GetLocalizerXmlPath("en-US/Plugins", ""));
+                var xmlPath = GetLocalizerXmlPath("en-US/Plugins", pair.Value.Name + ".xml");
+                string pluginList = string.Empty;
+                ActGlobals.oFormGetPlugins.ExportControlTextXML(pluginList);
+                var formInfo = typeof(FormGetPlugins).GetField(pair.Key, BindingFlags.Public | BindingFlags.Static);
+                var importInfo = pair.Value.GetMethod("ExportControlTextXML", new Type[] { typeof(string) });
+                importInfo.Invoke(formInfo.GetValue(null), new object[] { xmlPath });
+            }
+
             // Configuration tree view
             var tvOptionsInfo = typeof(FormActMain).GetField("tvOptions", BindingFlags.NonPublic | BindingFlags.GetField | BindingFlags.SetField | BindingFlags.Instance);
             var tvOptions = tvOptionsInfo.GetValue(ActGlobals.oFormActMain) as TreeView;
@@ -183,6 +268,23 @@ namespace RainbowMage.ActLocalizer
             using (var stream = new FileStream(GetLocalizerXmlPath("en-US", "ConfigTreeView.xml"), FileMode.Create, FileAccess.Write))
             {
                 treeViewSerializer.Serialize(stream, treeViewList);
+            }
+
+            // ImExport Configuration tree view
+            var tvIoInfo = typeof(FormActMain).GetField("tvIo", BindingFlags.NonPublic | BindingFlags.GetField | BindingFlags.SetField | BindingFlags.Instance);
+            var tvIo = tvIoInfo.GetValue(ActGlobals.oFormActMain) as TreeView;
+
+            var ioTreeViewList = new List<TreeViewTranslationEntry>();
+
+            foreach (TreeNode node in tvIo.Nodes)
+            {
+                BuildTreeNodeTranslationEntryList(node, ioTreeViewList);
+            }
+
+            var ImExtreeViewSerializer = new XmlSerializer(typeof(List<TreeViewTranslationEntry>));
+            using (var stream = new FileStream(GetLocalizerXmlPath("en-US", "IoTreeView.xml"), FileMode.Create, FileAccess.Write))
+            {
+                treeViewSerializer.Serialize(stream, ioTreeViewList);
             }
 
             // Misc

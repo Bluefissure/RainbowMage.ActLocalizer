@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ArrayOfTreeViewTranslationEntry xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TreeViewTranslationEntry Original="Import Encounters">Import Encounters</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Import a Log File">Import a Log File</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Import the Clipboard">Import the Clipboard</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Import an *.act File">Import an *.act File</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Export Encounters">Export Encounters</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Export to an *.act File">Export to an *.act File</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Export to an HTML Page">Export to an HTML Page</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Export to SQL/ODBC">Export to SQL/ODBC</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Export to an XML File">Export to an XML File</TreeViewTranslationEntry>
+</ArrayOfTreeViewTranslationEntry>

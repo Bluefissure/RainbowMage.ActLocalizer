@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ArrayOfTreeViewTranslationEntry xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TreeViewTranslationEntry Original="Import Encounters">导入战斗</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Import a Log File">导入日志文件</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Import the Clipboard">导入剪贴板</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Import an *.act File">导入 *.act 文件</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Export Encounters">导出战斗</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Export to an *.act File">导出至 *.act 文件</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Export to an HTML Page">导出至 HTML 界面</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Export to SQL/ODBC">导出至 SQL/ODBC</TreeViewTranslationEntry>
+  <TreeViewTranslationEntry Original="Export to an XML File">导出至 XML 文件</TreeViewTranslationEntry>
+</ArrayOfTreeViewTranslationEntry>
