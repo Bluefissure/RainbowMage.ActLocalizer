@@ -46,32 +46,6 @@ namespace RainbowMage.ActLocalizer
             { "oFormXmlSettingsIO", typeof(FormXmlSettingsIO) },
         };
 
-        private static Dictionary<string, Type> pluginsToLocalize = new Dictionary<string, Type>()
-        {
-            { "oFormActMain", typeof(FormActMain) },
-            { "oFormAlliesEdit", typeof(FormAlliesEdit) },
-            { "oFormAvoidanceReport", typeof(FormAvoidanceReport) },
-            { "oFormByCombatantLookup", typeof(FormByCombatantLookup) },
-            { "oFormCombatantSearch", typeof(FormCombatantSearch) },
-            { "oFormEncounterLogs", typeof(FormEncounterLogs) },
-            { "oFormEncounterVcr", typeof(FormEncounterVcr) },
-            { "oFormExportFormat", typeof(FormExportFormat) },
-            { "oFormGetPlugins", typeof(FormGetPlugins) },
-            { "oFormImportProgress", typeof(FormImportProgress) },
-            { "oFormMiniParse", typeof(FormMiniParse) },
-            { "oFormPerformanceWizard", typeof(FormPerformanceWizard) },
-            { "oFormResistsDeathReport", typeof(FormResistsDeathReport) },
-            { "oFormSpellRecastCalc", typeof(FormSpellRecastCalc) },
-            { "oFormSpellTimers", typeof(FormSpellTimers) },
-            { "oFormSpellTimersPanel", typeof(FormSpellTimersPanel) },
-            { "oFormSpellTimersPanel2", typeof(FormSpellTimersPanel) },
-            { "oFormSqlQuery", typeof(FormSqlQuery) },
-            { "oFormStartupWizard", typeof(FormStartupWizard) },
-            { "oFormTimeLine", typeof(FormTimeLine) },
-            { "oFormUpdater", typeof(FormUpdater) },
-            { "oFormXmlSettingsIO", typeof(FormXmlSettingsIO) },
-        };
-
         public void Localize()
         {
             try
@@ -240,18 +214,7 @@ namespace RainbowMage.ActLocalizer
                 var importInfo = pair.Value.GetMethod("ExportControlTextXML", new Type[] { typeof(string) });
                 importInfo.Invoke(formInfo.GetValue(null), new object[] { xmlPath });
             }
-
-            // Plugins
-            foreach (var pair in pluginsToLocalize)
-            {
-                Directory.CreateDirectory(GetLocalizerXmlPath("en-US/Plugins", ""));
-                var xmlPath = GetLocalizerXmlPath("en-US/Plugins", pair.Value.Name + ".xml");
-                string pluginList = string.Empty;
-                ActGlobals.oFormGetPlugins.ExportControlTextXML(pluginList);
-                var formInfo = typeof(FormGetPlugins).GetField(pair.Key, BindingFlags.Public | BindingFlags.Static);
-                var importInfo = pair.Value.GetMethod("ExportControlTextXML", new Type[] { typeof(string) });
-                importInfo.Invoke(formInfo.GetValue(null), new object[] { xmlPath });
-            }
+            
 
             // Configuration tree view
             var tvOptionsInfo = typeof(FormActMain).GetField("tvOptions", BindingFlags.NonPublic | BindingFlags.GetField | BindingFlags.SetField | BindingFlags.Instance);
