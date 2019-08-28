@@ -7,6 +7,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml;
 using System.Xml.Serialization;
 
 namespace RainbowMage.ActLocalizer
@@ -58,6 +59,15 @@ namespace RainbowMage.ActLocalizer
             catch (Exception e)
             {
                 MessageBox.Show("Failed to apply localization file.\n\n" + e.ToString());
+            }
+
+            try
+            {
+                LocalizePlugin();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Failed to apply plugin localization file.\n\n" + e.ToString());
             }
         }
 
@@ -188,6 +198,47 @@ namespace RainbowMage.ActLocalizer
             }
         }
 
+        private void LocalizePlugin()
+        {
+            var plugins = ActGlobals.oFormActMain.ActPlugins;
+            var missingPlugins = "";
+            foreach (var plugin in plugins)
+            {
+                if (plugin.cbEnabled.Checked)
+                {
+                    var pluginTitle = plugin.lblPluginTitle.Text;
+                    var pluginTranslated = false;
+                    foreach (var pluginXml in Directory.EnumerateFiles(GetLocalizerXmlPath(this.Locale, "Plugins")))
+                    {
+                        if (pluginXml.Split('\\').Last() != pluginTitle + ".xml")
+                            continue;
+                        using (var reader = new XmlTextReader(pluginXml))
+                        {
+                            while (reader.Read())
+                            {
+                                if (reader.NodeType == XmlNodeType.Element && reader.Name == "Control")
+                                {
+                                    for (int i = 0; i < reader.AttributeCount; i++)
+                                        reader.MoveToAttribute(i);
+                                    var text = reader.GetAttribute(0) + "\n" + reader.GetAttribute(1) + "\n" + reader.GetAttribute(2);
+                                    pluginTranslated = ActGlobals.oFormActMain.ImportControlChilderenText(reader.GetAttribute(0), 
+                                        reader.GetAttribute(1), 
+                                        reader.GetAttribute(2), 
+                                        false,
+                                        plugin.tpPluginSpace);
+                                    if (!pluginTranslated && missingPlugins.IndexOf(pluginTitle)==-1) missingPlugins += "\n" + pluginTitle ;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            if (missingPlugins != "")
+            {
+                MessageBox.Show("Following Plugins are not fully translated:" + missingPlugins);
+            }
+        }
+
         private static void ApplyTranslationsForNodes(TreeNode node, List<TreeViewTranslationEntry> list)
         {
             var query = list.Where(x => x.Original == node.Text);
@@ -271,6 +322,28 @@ namespace RainbowMage.ActLocalizer
                 miscSerializer.Serialize(stream, miscList);
             }
         }
+
+        public static void ExportPluginsLocalizerXml()
+        {
+            var plugins = ActGlobals.oFormActMain.ActPlugins;
+            Directory.CreateDirectory(GetLocalizerXmlPath("en-US\\Plugins", ""));
+            foreach (var plugin in plugins)
+            {
+                if (plugin.cbEnabled.Checked)
+                {
+                    var pluginTitle = plugin.lblPluginTitle.Text;
+                    using (var writer = new XmlTextWriter(GetLocalizerXmlPath("en-US\\Plugins", pluginTitle + ".xml"), null))
+                    {
+                        writer.Formatting = Formatting.Indented;
+                        writer.WriteStartElement("ControlText");
+                        ActGlobals.oFormActMain.ExportControlChilderenText(writer, plugin.tpPluginSpace, "root\\tc1\\tpPlugins\\tcPlugins\\");
+                        writer.WriteFullEndElement();
+                    }
+                }
+            }
+            MessageBox.Show("Successfully exported plugin translations files.");
+        }
+
 
         public static void BuildTreeNodeTranslationEntryList(TreeNode node, List<TreeViewTranslationEntry> list)
         {

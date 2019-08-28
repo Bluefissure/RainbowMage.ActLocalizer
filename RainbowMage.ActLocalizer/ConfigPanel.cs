@@ -63,5 +63,10 @@ namespace RainbowMage.ActLocalizer
             Config.ExportOriginalOnNextBoot = true;
             buttonExport.Enabled = false;
         }
+
+        private void buttonExportRN_Click(object sender, EventArgs e)
+        {
+            Localizer.ExportPluginsLocalizerXml();
+        }
     }
 }
