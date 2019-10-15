@@ -1,0 +1,6 @@
+<ControlText>
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\ConfigPanel" UniqueName="buttonExportRN" Text="立即导出当前插件翻译文件&#xD;&#xA;(如果存在则覆盖)" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\ConfigPanel" UniqueName="label2" Text="* 您需要重新启动ACT才能生效。" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\ConfigPanel" UniqueName="buttonExport" Text="下次启动时导出原始翻译文件&#xD;&#xA;(如果存在则覆盖)" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\ConfigPanel" UniqueName="label1" Text="语言：" />
+</ControlText>

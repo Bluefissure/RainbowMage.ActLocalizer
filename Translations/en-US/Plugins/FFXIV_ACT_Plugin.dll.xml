@@ -1,0 +1,36 @@
+<ControlText>
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage" UniqueName="chkShowDebug" Text="(DEBUG) Show debug messages" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage" UniqueName="chkLogAllNetwork" Text="(DEBUG) Dump all Network Data to logfile" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage" UniqueName="label1" Text="Parser Messages" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage" UniqueName="cmdClearMessages" Text="Clear" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage" UniqueName="cmdCopyProblematic" Text="Copy to Clipboard" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage" UniqueName="groupBox3" Text="FFXIV Game Data" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="chkDisableSocketFilter" Text="Disable high-performance network filter" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="label5" Text="Parse Mode:" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="cboParseMode" Text="Network" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="cboRefreshNetwork" Text="Refresh List" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="cboNetwork" Text="All (Default)" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="label4" Text="Filter on Local IP:" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="cmdResetLogPath" Text="Reset to Default" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="cmdChangeFolder" Text="Change" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="label3" Text="Log File Location:" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="txtLogFileDirectory" Text="C:\Users\Alienware\AppData\Roaming\Advanced Combat Tracker\FFXIVLogs" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="cmdOpenExportFolder" Text="Open FFXIV Log Folder" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="cmdReloadProcess" Text="Refresh List" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="label7" Text="FFXIV Process ID:" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="cmdValidateAddress" Text="Test Game Connection" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="cboProcessID" Text="Automatic" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage" UniqueName="chkDisableCombatLog" Text="Hide Chat Log (for privacy)" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage" UniqueName="groupBox1" Text="Parse Options" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="chkParsePotency" Text="(DEBUG) Parse Potency Amounts" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="chkShowRealDoTs" Text="(DEBUG) Also Show 'Real' DoT Ticks" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="chkSimulateDoTCrits" Text="(DEBUG) Simulate Individual DoT Crits" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="chkGraphPotency" Text="(DEBUG) Graph Potency" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="chkDisableCombinePets" Text="Disable Combine Pets with Owner" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="label6" Text="Parse Filter:" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="chkScanHP" Text="Include HP for Triggers" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="cboParseFilter" Text="None" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="chkDisableDamageShield" Text="Disable Damage Shield estimates" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="label2" Text="Game Language:" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="cboLanguage" Text="English" />
+</ControlText>

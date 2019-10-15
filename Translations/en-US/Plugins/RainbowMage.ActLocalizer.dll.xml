@@ -1,0 +1,7 @@
+<ControlText>
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\ConfigPanel" UniqueName="buttonExportRN" Text="Export current plugin translation files right now&#xD;&#xA;(Overwrite if exists)" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\ConfigPanel" UniqueName="label2" Text="* You need to restart the ACT to take effect." />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\ConfigPanel" UniqueName="buttonExport" Text="Export original translation files on next boot&#xD;&#xA;(Overwrite if exists)" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\ConfigPanel" UniqueName="comboLocale" Text="en-US" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\ConfigPanel" UniqueName="label1" Text="Locale:" />
+</ControlText>
