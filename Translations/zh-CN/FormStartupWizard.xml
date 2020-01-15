@@ -7,8 +7,8 @@
     <Control ControlPath="root\tabControl1\tabPage1" UniqueName="label1" Text="该向导将帮助您选择解析插件，配置更新和选择日志文件。" />
     <Control ControlPath="root\tabControl1" UniqueName="tabPage4" Text="解析插件" />
     <Control ControlPath="root\tabControl1\tabPage4" UniqueName="label8" Text="确保为正在进行的游戏选择合适的插件。 （用粗体红色标出）" />
-    <Control ControlPath="root\tabControl1\tabPage4" UniqueName="label7" Text="ACT本身没有任何解析游戏日志文件的能力。 您必须使用外部插件来解析来自不同游戏的日志文件。 单击下面的按钮以获取ACT网站上可用的解析插件列表。 选择后，单击“使用此插件按钮”以启用它。 不要一次启用多个解析插件。" />
-    <Control ControlPath="root\tabControl1\tabPage4" UniqueName="btnUsePlugin" Text="2: 使用此插件" />
+    <Control ControlPath="root\tabControl1\tabPage4" UniqueName="label7" Text="ACT本身没有任何解析游戏日志文件的能力。 您必须使用外部插件来解析来自不同游戏的日志文件。 浏览下拉列表，然后选择一个要启用的解析插件。 一次不要启用多个解析插件。" />
+    <Control ControlPath="root\tabControl1\tabPage4" UniqueName="btnUsePlugin" Text="下载/启用插件" />
     <Control ControlPath="root\tabControl1\tabPage4" UniqueName="btnGetPluginTitles" Text="1: 获取可用的解析插件" />
     <Control ControlPath="root\tabControl1" UniqueName="tabPage2" Text="日志文件" />
     <Control ControlPath="root\tabControl1\tabPage2" UniqueName="label3" Text="每次切换角色时，ACT都可以检测到正在使用的其他日志文件，并自动切换到该文件。" />

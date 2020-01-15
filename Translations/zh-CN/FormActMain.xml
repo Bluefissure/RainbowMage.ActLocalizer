@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ControlText Form="FormActMain">
-    <Control ControlPath="root" UniqueName="btnPasteXmlSnippet" Text="导入&#xD;&#xA;XML" />
-    <Control ControlPath="root" UniqueName="cbbShowTimers" Text="计时器" />
-    <Control ControlPath="root" UniqueName="cbbMiniParse" Text="迷你统计" />
+    <Control ControlPath="root" UniqueName="btnPasteXmlSnippet" Text="虚拟FLP" />
+    <Control ControlPath="root\flpCornerButtons" UniqueName="cbbMiniParse" Text="迷你统计" />
+    <Control ControlPath="root\flpCornerButtons" UniqueName="cbbShowTimers" Text="计时器" />
+    <Control ControlPath="root\flpCornerButtons" UniqueName="btnPasteXmlSnippet" Text="导入&#xD;&#xA;XML" />
     <Control ControlPath="root\tc1" UniqueName="tpMain" Text="首页" />
     <Control ControlPath="root\tc1\tpMain\pRightView\pDG" UniqueName="lblDG" Text="战斗" />
     <Control ControlPath="root\tc1\tpMain\pRightView\pGraphing\pCList" UniqueName="lblGraphList" Text="所显示成员：" />
@@ -27,6 +28,8 @@
     <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="btnCheckVer" Text="立即检查版本" />
     <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="label5" Text="版本：" />
     <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="linkURL" Text="官方网站" />
+    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="label4" Text="作者：EQAditu (EQ2-Skyfire)" />
+    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="linkEmail" Text="aditu@advancedcombattracker.com" />
     <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="label7" Text="访问：" />
     <Control ControlPath="root\tc1" UniqueName="tpOptions" Text="选项" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_XmlShare" UniqueName="groupBox4" Text="XML分享" />
@@ -246,7 +249,7 @@
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel5" UniqueName="rbSndCommandBeep" Text="Beep" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel5" UniqueName="lblCommandSound" Text="命令声音:" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel5" UniqueName="btnSndCommandBrowse" Text="..." />
-    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\pAudioDevice" UniqueName="rbSndPlugin" Text="无声音（或由其他插件管理）" />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\pAudioDevice" UniqueName="rbSndPlugin" Text="插件声音" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\pAudioDevice" UniqueName="rbSndWmpApi" Text="使用 WMP API 声音 （音量控制，多种声音，轻微延迟）" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\pAudioDevice" UniqueName="rbSndWinApi" Text="使用 Windows API 声音  （无音量控制，一次一个声音）" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\pAudioDevice" UniqueName="label93" Text="TTS音量" />
@@ -485,8 +488,9 @@
     <Control ControlPath="root\tc1\tpTriggers\tcTriggers\tabPage0" UniqueName="tbTriggerText" Text="匹配的文本" />
     <Control ControlPath="root\tc1" UniqueName="tpPlugins" Text="插件" />
     <Control ControlPath="root\tc1\tpPlugins\tcPlugins" UniqueName="tabPage1" Text="插件列表" />
+    <Control ControlPath="root\tc1\tpPlugins\tcPlugins\tabPage1\flpPluginButtons" UniqueName="btnGetPlugins" Text="获取插件..." />
+    <Control ControlPath="root\tc1\tpPlugins\tcPlugins\tabPage1\flpPluginButtons" UniqueName="btnGetAssemblies" Text="查看加载程序集" />
     <Control ControlPath="root\tc1\tpPlugins\tcPlugins\tabPage1" UniqueName="groupBox3" Text="插件信息" />
-    <Control ControlPath="root\tc1\tpPlugins\tcPlugins\tabPage1\groupBox3" UniqueName="btnGetPlugins" Text="获取插件..." />
     <Control ControlPath="root\tc1\tpPlugins\tcPlugins\tabPage1\panel15" UniqueName="btnAddPluginPanel" Text="添加/启用插件" />
     <Control ControlPath="root\tc1\tpPlugins\tcPlugins\tabPage1\panel15" UniqueName="btnPluginBrowse" Text="浏览..." />
     <Control ControlPath="root\tc1" UniqueName="tpImportExport" Text="导入/导出" />
@@ -546,18 +550,9 @@
     <Control ControlPath="root\tc1\tpHistory\groupBox4" UniqueName="cbRecordSearchZones" Text="搜索区域名称" />
     <Control ControlPath="root\tc1\tpHistory\groupBox4" UniqueName="btnRecordSearchDateTime" Text="日期/时间搜索" />
     <Control ControlPath="root\tc1\tpHistory\groupBox4" UniqueName="btnRecordSearchText" Text="文本搜索" />
-    <Control ControlPath="root\tc1" UniqueName="tpAbout" Text="关于" />
-    <Control ControlPath="root\tc1\tpAbout" UniqueName="groupBox14" Text="发送错误或反馈" />
-    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="rtbFeedback" Text="在此输入评论，然后单击“提交”。" />
-    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="lblFeedback" Text="如果您希望发送有关主要ACT计划的私人消息，请随时使用此提交表单。 但是我可能无法对不是我开发的插件提供帮助。 &#xD;&#xA;&#xD;&#xA;如果您想要及时回复，我强烈建议您使用ACT网站论坛或电子邮件。 上文均有对应链接。" />
-    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="btnFeedbackSubmit" Text="提交" />
-    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="cbFeedbackLogs" Text="包含日志&#xD;&#xA;&quot;Advanced Combat Tracker.log&quot;" />
-    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="tbFeedbackEmail" Text="&lt;您的邮件地址（可选）&gt;" />
-    <Control ControlPath="root\tc1\tpAbout" UniqueName="gbAbout" Text="关于" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="linkLabelAppData" Text="ACT数据文件夹" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="cbAutoCheck" Text="自动版本检查" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="btnCheckVer" Text="立即检查版本" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="label5" Text="版本：" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="linkURL" Text="官方网站" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="label7" Text="访问：" />
+    <Control ControlPath="root\tc1" UniqueName="tpNotifications" Text="通知" />
+    <Control ControlPath="root\tc1\tpNotifications" UniqueName="btnNotificationsClear" Text="清除已读" />
+    <Control ControlPath="root\tc1\tpNotifications" UniqueName="btnNotificationsMarkRead" Text="全部已读" />
+    <Control ControlPath="root\tc1\tpNotifications" UniqueName="gbNotifications" Text="通知历史" />
+    <Control ControlPath="root\tc1\tpNotifications" UniqueName="cbNotificationBlink" Text="通知徽章闪烁" />
 </ControlText>

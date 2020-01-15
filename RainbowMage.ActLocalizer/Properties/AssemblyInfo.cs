@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Bluefissure")]
 [assembly: AssemblyProduct("RainbowMage.ActLocalizer")]
-[assembly: AssemblyCopyright("Copyright © 2019 Bluefissure")]
+[assembly: AssemblyCopyright("Copyright © 2020 Bluefissure")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

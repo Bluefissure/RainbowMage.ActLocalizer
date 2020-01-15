@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ControlText Form="FormActMain">
-    <Control ControlPath="root" UniqueName="btnPasteXmlSnippet" Text="Import&#xD;&#xA;XML" />
-    <Control ControlPath="root" UniqueName="cbbShowTimers" Text="Show Timers" />
-    <Control ControlPath="root" UniqueName="cbbMiniParse" Text="Show Mini" />
+    <Control ControlPath="root\flpCornerButtons" UniqueName="cbbMiniParse" Text="Show Mini" />
+    <Control ControlPath="root\flpCornerButtons" UniqueName="cbbShowTimers" Text="Show Timers" />
+    <Control ControlPath="root\flpCornerButtons" UniqueName="btnPasteXmlSnippet" Text="Import&#xD;&#xA;XML" />
+    <Control ControlPath="root" UniqueName="btnPasteXmlSnippet" Text="fakeFLP" />
     <Control ControlPath="root\tc1" UniqueName="tpMain" Text="Main" />
     <Control ControlPath="root\tc1\tpMain\pRightView\pDG" UniqueName="lblDG" Text="Encounters" />
     <Control ControlPath="root\tc1\tpMain\pRightView\pGraphing\pCList" UniqueName="lblGraphList" Text="Combatants shown:" />
@@ -14,6 +15,23 @@
     <Control ControlPath="root\tc1\tpMain\pLeftView\pTvBtns" UniqueName="btnDeleteChecked" Text="Delete Checked" />
     <Control ControlPath="root\tc1\tpMain\pLeftView\pTvBtns" UniqueName="cbShowChecks" Text="Show Checkboxes (Merge/Delete)" />
     <Control ControlPath="root\tc1\tpMain\pLeftView\pTvBtns" UniqueName="cbLockDG" Text="&amp;Disable Table Auto-Refresh" />
+    <Control ControlPath="root\tc1" UniqueName="tpAbout" Text="About" />
+    <Control ControlPath="root\tc1\tpAbout" UniqueName="groupBox14" Text="Send Bugs or Feedback" />
+    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="rtbFeedback" Text="Type comments here, then click Submit." />
+    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="lblFeedback" Text="If you wish to send a private message regarding the main ACT program, feel free to use this submission form.  Plugins that I did not author, I may not be able to help with.  &#xD;&#xA;&#xD;&#xA;If you want a prompt response, I strongly suggest using the ACT website forums or email.  Find links above." />
+    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="btnFeedbackSubmit" Text="Submit" />
+    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="cbFeedbackLogs" Text="Include error logs from          &quot;Advanced Combat Tracker.log&quot;" />
+    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="tbFeedbackEmail" Text="&lt;Optional return email address&gt;" />
+    <Control ControlPath="root\tc1\tpAbout" UniqueName="gbAbout" Text="About" />
+    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="linkLabelAppData" Text="App Data Folder" />
+    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="cbAutoCheck" Text="Auto Version Check" />
+    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="btnCheckVer" Text="Check Version Now" />
+    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="label5" Text="Version:" />
+    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="linkURL" Text="Main Website" />
+    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="label4" Text="Made by EQAditu (EQ2-Skyfire)" />
+    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="linkEmail" Text="aditu@advancedcombattracker.com" />
+    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="lblVersion" Text="3.4.5     Release: 266" />
+    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="label7" Text="Visit:" />
     <Control ControlPath="root\tc1" UniqueName="tpOptions" Text="Options" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_XmlShare" UniqueName="groupBox4" Text="Incoming XML Shares" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_XmlShare\groupBox4\tableLayoutPanel2" UniqueName="btnShareDelete" Text="Delete Above Data" />
@@ -257,7 +275,7 @@
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel5" UniqueName="rbSndCommandBeep" Text="Beep" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel5" UniqueName="lblCommandSound" Text="Command sound:" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\tableLayoutPanel5" UniqueName="btnSndCommandBrowse" Text="..." />
-    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\pAudioDevice" UniqueName="rbSndPlugin" Text="No internal sound (Plugin or no sound)" />
+    <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\pAudioDevice" UniqueName="rbSndPlugin" Text="Plugin Sound" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\pAudioDevice" UniqueName="rbSndWmpApi" Text="Use WMP API Sound (Volume control, multiple sounds, slight latency)" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\pAudioDevice" UniqueName="rbSndWinApi" Text="Use Windows API Sound  (No volume control, one sound at a time)" />
     <Control ControlPath="root\tc1\tpOptions\flpOptionControls\Options_Sound\pAudioDevice" UniqueName="label93" Text="TTS Vol" />
@@ -499,8 +517,9 @@
     <Control ControlPath="root\tc1\tpTriggers\tcTriggers\tabPage0" UniqueName="linkRegex" Text="Regular Expression:" />
     <Control ControlPath="root\tc1" UniqueName="tpPlugins" Text="Plugins" />
     <Control ControlPath="root\tc1\tpPlugins\tcPlugins" UniqueName="tabPage1" Text="Plugin Listing" />
+    <Control ControlPath="root\tc1\tpPlugins\tcPlugins\tabPage1\flpPluginButtons" UniqueName="btnGetPlugins" Text="Get Plugins..." />
+    <Control ControlPath="root\tc1\tpPlugins\tcPlugins\tabPage1\flpPluginButtons" UniqueName="btnGetAssemblies" Text="View Loaded Assemblies" />
     <Control ControlPath="root\tc1\tpPlugins\tcPlugins\tabPage1" UniqueName="groupBox3" Text="Plugin Info" />
-    <Control ControlPath="root\tc1\tpPlugins\tcPlugins\tabPage1\groupBox3" UniqueName="btnGetPlugins" Text="Get Plugins..." />
     <Control ControlPath="root\tc1\tpPlugins\tcPlugins\tabPage1\panel15" UniqueName="btnAddPluginPanel" Text="Add/Enable Plugin" />
     <Control ControlPath="root\tc1\tpPlugins\tcPlugins\tabPage1\panel15" UniqueName="btnPluginBrowse" Text="Browse..." />
     <Control ControlPath="root\tc1" UniqueName="tpImportExport" Text="Import/Export" />
@@ -563,21 +582,9 @@
     <Control ControlPath="root\tc1\tpHistory\groupBox4" UniqueName="cbRecordSearchZones" Text="Search zone names" />
     <Control ControlPath="root\tc1\tpHistory\groupBox4" UniqueName="btnRecordSearchDateTime" Text="Search by Date/Time" />
     <Control ControlPath="root\tc1\tpHistory\groupBox4" UniqueName="btnRecordSearchText" Text="Search by Text" />
-    <Control ControlPath="root\tc1" UniqueName="tpAbout" Text="About" />
-    <Control ControlPath="root\tc1\tpAbout" UniqueName="groupBox14" Text="Send Bugs or Feedback" />
-    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="rtbFeedback" Text="Type comments here, then click Submit." />
-    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="lblFeedback" Text="If you wish to send a private message regarding the main ACT program, feel free to use this submission form.  Plugins that I did not author, I may not be able to help with.  &#xD;&#xA;&#xD;&#xA;If you want a prompt response, I strongly suggest using the ACT website forums or email.  Find links above." />
-    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="btnFeedbackSubmit" Text="Submit" />
-    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="cbFeedbackLogs" Text="Include error logs from          &quot;Advanced Combat Tracker.log&quot;" />
-    <Control ControlPath="root\tc1\tpAbout\groupBox14" UniqueName="tbFeedbackEmail" Text="&lt;Optional return email address&gt;" />
-    <Control ControlPath="root\tc1\tpAbout" UniqueName="gbAbout" Text="About" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="linkLabelAppData" Text="App Data Folder" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="cbAutoCheck" Text="Auto Version Check" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="btnCheckVer" Text="Check Version Now" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="label5" Text="Version:" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="linkURL" Text="Main Website" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="label4" Text="Made by EQAditu (EQ2-Skyfire)" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="linkEmail" Text="aditu@advancedcombattracker.com" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="lblVersion" Text="3.4.1     Release: 261" />
-    <Control ControlPath="root\tc1\tpAbout\gbAbout" UniqueName="label7" Text="Visit:" />
+    <Control ControlPath="root\tc1" UniqueName="tpNotifications" Text="Notifications" />
+    <Control ControlPath="root\tc1\tpNotifications" UniqueName="btnNotificationsClear" Text="Clear read" />
+    <Control ControlPath="root\tc1\tpNotifications" UniqueName="btnNotificationsMarkRead" Text="Mark all as read" />
+    <Control ControlPath="root\tc1\tpNotifications" UniqueName="gbNotifications" Text="Notification History" />
+    <Control ControlPath="root\tc1\tpNotifications" UniqueName="cbNotificationBlink" Text="Notification badge blinks" />
 </ControlText>

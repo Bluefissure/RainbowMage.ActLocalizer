@@ -127,7 +127,7 @@
   <MiscTranslationEntry Description="" Key="messageBox-feedbackShort">您的反馈似乎很短。 如果您要报告问题，您描述的越多越好。 如果你没有充分描述问题，我必须猜测你的问题是什么......可能根本没有回应。
 
 您是否希望继续发送反馈？</MiscTranslationEntry>
-  <MiscTranslationEntry Description="" Key="messageBox-pluginImageError">ACT不能将Win32/COM程序集用作本机插件。</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-pluginImageError">ACT不能将Win32/COM程序集或32/64位交叉编译的程序集用作本机插件。</MiscTranslationEntry>
   <MiscTranslationEntry Description="" Key="messageBoxTitle-pluginImageError">图像格式不正确</MiscTranslationEntry>
   <MiscTranslationEntry Description="" Key="messageBox-ftpConnectionTest">在此测试期间，ACT可能会无响应。 测试执行期间请至少等待30秒，如果出现则允许通过防火墙通知进行访问。</MiscTranslationEntry>
   <MiscTranslationEntry Description="" Key="messageBox-importHistoryNoLogMatch">无法找到可能具有日期范围的角色的日志文件。 请找到这个文件。</MiscTranslationEntry>

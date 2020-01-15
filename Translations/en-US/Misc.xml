@@ -127,7 +127,7 @@ Are you sure you wish to leave your email blank?</MiscTranslationEntry>
   <MiscTranslationEntry Description="" Key="messageBox-feedbackShort">Your feedback seems to be very short.  If you are reporting a problem, the more you describe it the better.  If you do not sufficiently describe the problem, I must resort to guessing what your problem is... which may get no response at all.
 
 Do you wish to continue with sending the feedback?</MiscTranslationEntry>
-  <MiscTranslationEntry Description="" Key="messageBox-pluginImageError">ACT cannot use Win32/COM assemblies as native plugins.</MiscTranslationEntry>
+  <MiscTranslationEntry Description="" Key="messageBox-pluginImageError">ACT cannot use Win32/COM assemblies as native plugins or mix 32/64 bit assemblies.</MiscTranslationEntry>
   <MiscTranslationEntry Description="" Key="messageBoxTitle-pluginImageError">Bad image format</MiscTranslationEntry>
   <MiscTranslationEntry Description="" Key="messageBox-ftpConnectionTest">ACT may become unresponsive during this test.  Please wait at least 30 seconds while the test is performing, and allow access through firewall notifications if they appear.</MiscTranslationEntry>
   <MiscTranslationEntry Description="" Key="messageBox-importHistoryNoLogMatch">Could not find a log file for your character that likely had the date range.  Please find this file.</MiscTranslationEntry>
