@@ -1,34 +1,35 @@
 <ControlText>
   <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage" UniqueName="chkShowDebug" Text="[调试] 显示调试信息" />
-  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage" UniqueName="chkLogAllNetwork" Text="[调试] 输出所有网络数据至日志文件" />
-  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage" UniqueName="label1" Text="解析信息" />
-  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage" UniqueName="cmdClearMessages" Text="清除" />
-  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage" UniqueName="cmdCopyProblematic" Text="复制到剪贴板" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\grpDebug" UniqueName="chkLogAllNetwork" Text="[调试] 输出所有网络数据" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\grpDebug" UniqueName="label1" Text="调试信息" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\grpDebug" UniqueName="cmdClearMessages" Text="清除" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\grpDebug" UniqueName="cmdCopyProblematic" Text="复制到剪贴板" />
   <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage" UniqueName="groupBox3" Text="FFXIV 游戏数据" />
-  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="chkDisableSocketFilter" Text="禁用高性能网络过滤器" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="chkDisableSocketFilter" Text="禁用高性能网络过滤器" />
   <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="label5" Text="解析模式：" />
   <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="cboParseMode" Text="网络" />
   <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="cboRefreshNetwork" Text="刷新列表" />
   <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="cboNetwork" Text="所有（默认）" />
   <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="label4" Text="本地IP过滤：" />
-  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="cmdResetLogPath" Text="重置为默认" />
-  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="cmdChangeFolder" Text="更改" />
-  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="label3" Text="日志文件位置：" />
-  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="cmdOpenExportFolder" Text="打开 FFXIV 日志文件夹" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox2" UniqueName="cmdResetLogPath" Text="重置为默认" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox2" UniqueName="cmdChangeFolder" Text="更改" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage" UniqueName="groupBox2" Text="日志文件位置：" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox2" UniqueName="cmdOpenExportFolder" Text="打开 FFXIV 日志文件夹" />
   <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="cmdReloadProcess" Text="刷新列表" />
   <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="label7" Text="FFXIV 进程ID：" />
   <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="cmdValidateAddress" Text="测试游戏连接" />
   <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox3" UniqueName="cboProcessID" Text="自动" />
   <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage" UniqueName="chkDisableCombatLog" Text="隐藏聊天信息 (保护隐私)" />
   <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage" UniqueName="groupBox1" Text="解析选项" />
-  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="chkParsePotency" Text="[调试] 解析威力总量" />
-  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="chkShowRealDoTs" Text="[调试] 显示'真实'DoT伤害计数" />
-  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="chkSimulateDoTCrits" Text="[调试] 模拟独立DoT暴击" />
-  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="chkGraphPotency" Text="[调试]  生成威力图" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\grpDebug" UniqueName="chkParsePotency" Text="[调试] 解析威力总量" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\grpDebug" UniqueName="chkShowRealDoTs" Text="[调试] 显示'真实'DoT伤害计数" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\grpDebug" UniqueName="chkSimulateDoTCrits" Text="[调试] 模拟独立DoT暴击" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\grpDebug" UniqueName="chkGraphPotency" Text="[调试] 生成威力图" />
   <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="chkDisableCombinePets" Text="取消将召唤物伤害与主人合并" />
   <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="label6" Text="解析范围：" />
   <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="chkScanHP" Text="解析日志包含HP" />
   <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="cboParseFilter" Text="无" />
   <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="chkDisableDamageShield" Text="禁用伤害盾值模拟" />
+  <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="chkDisableCombatLog" Text="隐藏聊天日志 (保护隐私)" />
   <Control ControlPath="root\tc1\tpPlugins\tcPlugins\\SettingsPropertyPage\groupBox1" UniqueName="label2" Text="游戏语言：" />
 </ControlText>

@@ -221,22 +221,24 @@ namespace RainbowMage.ActLocalizer
                                     for (int i = 0; i < reader.AttributeCount; i++)
                                         reader.MoveToAttribute(i);
                                     var text = reader.GetAttribute(0) + "\n" + reader.GetAttribute(1) + "\n" + reader.GetAttribute(2);
-                                    pluginTranslated = ActGlobals.oFormActMain.ImportControlChilderenText(reader.GetAttribute(0), 
+                                    ActGlobals.oFormActMain.ImportControlChilderenText(reader.GetAttribute(0), 
                                         reader.GetAttribute(1), 
-                                        reader.GetAttribute(2), 
-                                        false,
+                                        reader.GetAttribute(2),
+                                        pluginTranslated,
                                         plugin.tpPluginSpace);
-                                    if (!pluginTranslated && missingPlugins.IndexOf(pluginTitle)==-1) missingPlugins += "\n" + pluginTitle ;
+                                    //if (!pluginTranslated && missingPlugins.IndexOf(pluginTitle)==-1) missingPlugins += "\n" + pluginTitle ;
                                 }
                             }
                         }
                     }
                 }
             }
+            /*
             if (missingPlugins != "")
             {
                 MessageBox.Show("Following Plugins are not fully translated:" + missingPlugins);
             }
+            */
         }
 
         private static void ApplyTranslationsForNodes(TreeNode node, List<TreeViewTranslationEntry> list)
@@ -336,7 +338,7 @@ namespace RainbowMage.ActLocalizer
                     {
                         writer.Formatting = Formatting.Indented;
                         writer.WriteStartElement("ControlText");
-                        ActGlobals.oFormActMain.ExportControlChilderenText(writer, plugin.tpPluginSpace, "root\\tc1\\tpPlugins\\tcPlugins\\");
+                        ActGlobals.oFormActMain.ExportControlChildrenText(writer, plugin.tpPluginSpace, "root\\tc1\\tpPlugins\\tcPlugins\\");
                         writer.WriteFullEndElement();
                     }
                 }
