@@ -58,7 +58,7 @@ namespace RainbowMage.ActLocalizer
             }
             catch (Exception e)
             {
-                MessageBox.Show("Failed to apply localization file.\n\n" + e.ToString());
+                ActGlobals.oFormActMain.NotificationAdd("Failed to apply localization file", e.ToString());
             }
 
             try
@@ -67,7 +67,7 @@ namespace RainbowMage.ActLocalizer
             }
             catch (Exception e)
             {
-                MessageBox.Show("Failed to apply plugin localization file.\n\n" + e.ToString());
+                ActGlobals.oFormActMain.NotificationAdd("Failed to apply plugin localization file", e.ToString());
             }
         }
 
@@ -92,13 +92,12 @@ namespace RainbowMage.ActLocalizer
 
         private void LocalizeConfigTreeView()
         {
-            var bindingFlags = BindingFlags.NonPublic | BindingFlags.GetField | BindingFlags.SetField | BindingFlags.Instance;
+            var bindingFlags = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.GetField | BindingFlags.SetField | BindingFlags.Instance;
             var tvOptionsInfo = typeof(FormActMain).GetField("tvOptions", bindingFlags);
             var optionsControlSetsInfo = typeof(FormActMain).GetField("optionsControlSets", bindingFlags);
-
             var tvOptions = tvOptionsInfo.GetValue(ActGlobals.oFormActMain) as TreeView;
-            var optionsControlSets = optionsControlSetsInfo.GetValue(ActGlobals.oFormActMain) as Dictionary<string, List<Control>>;
-
+           // var optionsControlSets = optionsControlSetsInfo.GetValue(ActGlobals.oFormActMain) as Dictionary<string, List<Control>>;
+            var optionsControlSets = ActGlobals.oFormActMain.OptionsControlSets;
             var serializer = new XmlSerializer(typeof(List<TreeViewTranslationEntry>));
             using (var stream = new FileStream(GetLocalizerXmlPath(this.Locale, "ConfigTreeView.xml"), FileMode.Open, FileAccess.Read))
             {
@@ -130,8 +129,8 @@ namespace RainbowMage.ActLocalizer
 
                     newOptionControlSets.Add(translated, pair.Value);
                 }
-
-                optionsControlSetsInfo.SetValue(ActGlobals.oFormActMain, newOptionControlSets);
+                ActGlobals.oFormActMain.OptionsControlSets = newOptionControlSets;
+                //optionsControlSetsInfo.SetValue(ActGlobals.oFormActMain, newOptionControlSets);
             }
         }
 
@@ -140,11 +139,11 @@ namespace RainbowMage.ActLocalizer
             //return;
             var bindingFlags = BindingFlags.NonPublic | BindingFlags.GetField | BindingFlags.SetField | BindingFlags.Instance;
             var tvIoInfo = typeof(FormActMain).GetField("tvIo", bindingFlags);
-            var ioControlSets = typeof(FormActMain).GetField("ioControlSets", bindingFlags);
+            //var ioControlSets = typeof(FormActMain).GetField("ioControlSets", bindingFlags);
 
             var tvIo = tvIoInfo.GetValue(ActGlobals.oFormActMain) as TreeView;
-            var optionsControlSets = ioControlSets.GetValue(ActGlobals.oFormActMain) as Dictionary<string, List<Control>>;
-
+            //var optionsControlSets = ioControlSets.GetValue(ActGlobals.oFormActMain) as Dictionary<string, List<Control>>;
+            var optionsControlSets = ActGlobals.oFormActMain.IoControlSets;
             var serializer = new XmlSerializer(typeof(List<TreeViewTranslationEntry>));
             using (var stream = new FileStream(GetLocalizerXmlPath(this.Locale, "IoTreeView.xml"), FileMode.Open, FileAccess.Read))
             {
@@ -177,7 +176,8 @@ namespace RainbowMage.ActLocalizer
                     newOptionControlSets.Add(translated, pair.Value);
                 }
 
-                ioControlSets.SetValue(ActGlobals.oFormActMain, newOptionControlSets);
+                // ioControlSets.SetValue(ActGlobals.oFormActMain, newOptionControlSets);
+                ActGlobals.oFormActMain.IoControlSets = newOptionControlSets;
             }
         }
 

@@ -55,7 +55,7 @@ namespace RainbowMage.ActLocalizer
             }
             catch (Exception e)
             {
-                MessageBox.Show("Failed to load config file.\n\n" + e.ToString());
+                ActGlobals.oFormActMain.NotificationAdd("Failed to load config file", e.ToString());
             }
 
             if (config == null)
@@ -88,7 +88,7 @@ namespace RainbowMage.ActLocalizer
                 }
                 catch (Exception e)
                 {
-                    MessageBox.Show("Failed to create or apply localizer.\n\n" + e.ToString());
+                    ActGlobals.oFormActMain.NotificationAdd("Failed to create or apply localizer", e.ToString());
                 }
             }
         }
